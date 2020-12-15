@@ -23,6 +23,7 @@ import {
 } from 'mdbreact';
 import './home.css';
 import './1705Colors.css';
+import logo3 from '../assets/Logos/1705white.jpg';
 
 class Nav extends React.Component {
     state = {
@@ -45,7 +46,7 @@ class Nav extends React.Component {
         const overlay = (
             <div
                 id='sidenav-overlay'
-                style={{ backgroundColor: 'transparent' }}
+                style={{ backgroundColor: 'black' }}
                 onClick={this.handleTogglerClick}
             />
         );
@@ -55,7 +56,7 @@ class Nav extends React.Component {
             <div id='parallaxintro'>
                 <div>
                     <MDBNavbar
-                        color='gold'
+                        color='black'
                         style={navStyle}
                         dark
                         expand='md'
@@ -65,18 +66,19 @@ class Nav extends React.Component {
                     >
                         <MDBContainer>
                             <MDBNavbarBrand>
-                                <MDBNavLink to='https://mdbootstrap.com/'>
-                                    <strong className='white-text'>SEVENTEEN 05</strong>
-                                </MDBNavLink>
+                                <span>
+                                    <strong className='goldtext'>SEVENTEEN<span className='white-text'>05</span></strong>
+                                    {/* <a href='/'><img style={{ width: '100px', padding: '0px' }} alt='1705 logo' src={logo3} /></a> */}
+                                </span>
                             </MDBNavbarBrand>
                             <MDBNavbarToggler onClick={this.handleTogglerClick} />
                             <MDBCollapse isOpen={collapsed} navbar>
                                 <MDBNavbarNav left>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder' to='#'>Gatherings</MDBNavLink>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='#'>Gatherings</MDBNavLink>
                                     </MDBNavItem>
                                     <MDBDropdown>
-                                        <MDBDropdownToggle nav caret>
+                                        <MDBDropdownToggle nav caret className='white-text'>
                                             <span className="font-weight-bolder white-text">Events</span>
                                         </MDBDropdownToggle>
                                         <MDBDropdownMenu className="dropdown-default">
@@ -86,13 +88,13 @@ class Nav extends React.Component {
                                         </MDBDropdownMenu>
                                     </MDBDropdown>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder' to='#'>Our Space</MDBNavLink>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='#'>Our Space</MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder' to='#'>Payments</MDBNavLink>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='#'>Payments</MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder' to='#'>Contact</MDBNavLink>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='#'>Contact</MDBNavLink>
                                     </MDBNavItem>
                                 </MDBNavbarNav>
                                 {/* <MDBNavbarNav right>
@@ -112,17 +114,17 @@ class Nav extends React.Component {
                                 <MDBNavbarNav right>
                                     <MDBNavItem>
                                         <MDBNavLink link to='!#'>
-                                            <MDBIcon fab icon='facebook' />
+                                            <MDBIcon className='goldtext2' fab icon='facebook' />
                                         </MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
                                         <MDBNavLink link to='!#'>
-                                            <MDBIcon fab icon='twitter' />
+                                            <MDBIcon className='goldtext2' fab icon='twitter' />
                                         </MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
                                         <MDBNavLink link to='!#'>
-                                            <MDBIcon fab icon='instagram' />
+                                            <MDBIcon className='goldtext2' fab icon='instagram' />
                                         </MDBNavLink>
                                     </MDBNavItem>
                                 </MDBNavbarNav>

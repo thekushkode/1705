@@ -17,9 +17,10 @@ import {
     MDBContainer
 } from 'mdbreact';
 import './1705Colors.css';
-import './home.css';
+// import './home.css';
 import Nav from './Nav';
 import bkgrd from '../assets/inspiration/vibes1.jpg';
+import FooterPage from './Footer';
 
 class Home extends React.Component {
     // state = {
@@ -65,18 +66,18 @@ class Home extends React.Component {
                         >
                             <MDBRow>
                                 <MDBCol md='12' className='mb-4 white-text text-center'>
-                                    <h1 className='display-3 mb-0 pt-md-5 pt-5 goldtext font-weight-bold'>
+                                    <h1 className='display-3 mb-0 pt-md-5 pt-5 goldtext2 font-weight-bold'>
                                         SEVENTEEN
                                     <span className='white-text font-weight-bold'>05</span>
                                     </h1>
                                     <hr className='hr-light my-4' />
                                     <h5 className='text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold'>
-                                        Check documentation to see how to use MDBParallax
+                                        Book your unforgettable event with SEVENTEEN05!
                                 </h5>
                                     <MDBBtn
-                                        className='gold'
+                                        className='gold2 black-text'
                                         size='lg'
-                                        href='https://mdbootstrap.com/docs/react/css/parallax/'
+                                        href='#'
                                         target='_blank'
                                     >
                                         Book Your Event!
@@ -147,6 +148,9 @@ class Home extends React.Component {
                             </MDBRow>
                         </MDBContainer>
                     </main>
+                    <footer>
+                        <FooterPage />
+                    </footer>
                 </div>
             </div>
         );

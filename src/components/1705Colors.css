@@ -2,8 +2,20 @@
     background: rgb(172, 130, 73) !important;
 }
 
+.gold2 {
+    background: rgb(223, 170, 96) !important;
+}
+
 .goldtext {
     color: rgb(172, 130, 73) !important;
+}
+
+.herofont {
+    font-size: 75px;
+}
+
+.goldtext2 {
+    color: rgb(223, 170, 96) !important;
 }
 
 body {
@@ -11,7 +23,7 @@ body {
 }
 
 .whitegradient {
-    background: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 100%);
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 100%);
+    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
 }
