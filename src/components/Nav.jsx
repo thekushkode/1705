@@ -66,10 +66,10 @@ class Nav extends React.Component {
                     >
                         <MDBContainer>
                             <MDBNavbarBrand>
-                                <span>
+                                <a href='/'>
                                     <strong className='goldtext'>SEVENTEEN<span className='white-text'>05</span></strong>
                                     {/* <a href='/'><img style={{ width: '100px', padding: '0px' }} alt='1705 logo' src={logo3} /></a> */}
-                                </span>
+                                </a>
                             </MDBNavbarBrand>
                             <MDBNavbarToggler onClick={this.handleTogglerClick} />
                             <MDBCollapse isOpen={collapsed} navbar>
@@ -88,13 +88,13 @@ class Nav extends React.Component {
                                         </MDBDropdownMenu>
                                     </MDBDropdown>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder white-text' to='#'>Our Space</MDBNavLink>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='eventspace'>Our Space</MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='#'>Payments</MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder white-text' to='#'>Contact</MDBNavLink>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='/contact'>Contact</MDBNavLink>
                                     </MDBNavItem>
                                 </MDBNavbarNav>
                                 {/* <MDBNavbarNav right>
