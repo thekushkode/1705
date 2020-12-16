@@ -2,6 +2,7 @@ import React from "react";
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn, MDBJumbotron, MDBCardTitle } from "mdbreact";
 import Nav from "./Nav";
 import FooterPage from "./Footer";
+import bkgrnd from '../assets/space-photos/entrance.png';
 
 const OurSpace = () => {
     return (
@@ -10,13 +11,21 @@ const OurSpace = () => {
                 <Nav />
             </header>
             <main>
-                <MDBJumbotron fluid style={{ top: '0', left: '0' }}>
-                    <MDBCol className="text-white text-center py-5 px-4" style={{ backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)` }}>
+                <div style={{ backgroundImage: "url(" + bkgrnd + ")" }}>
+                    <MDBMask className='whitegradient' />
+                    <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Create your beautiful website with MDBootstrap</MDBCardTitle>
+                    <p className="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                    optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
+                            </p>
+                    <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="clone" className="mr-2"></MDBIcon> View project</MDBBtn>Î
+                </div>
+                <MDBJumbotron fluid>
+                    <MDBCol className="text-white text-center py-5 px-4" style={{ backgroundImage: "url(" + bkgrnd + ")" }}>
                         <MDBCol className="py-5">
                             <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Create your beautiful website with MDBootstrap</MDBCardTitle>
                             <p className="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
                             optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
-                        </p>
+                            </p>
                             <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="clone" className="mr-2"></MDBIcon> View project</MDBBtn>
                         </MDBCol>
                     </MDBCol>

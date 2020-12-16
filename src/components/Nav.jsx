@@ -88,7 +88,7 @@ class Nav extends React.Component {
                                         </MDBDropdownMenu>
                                     </MDBDropdown>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder white-text' to='eventspace'>Our Space</MDBNavLink>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='/eventspace'>Our Space</MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='#'>Payments</MDBNavLink>
