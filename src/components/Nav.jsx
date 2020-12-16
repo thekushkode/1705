@@ -97,20 +97,6 @@ class Nav extends React.Component {
                                         <MDBNavLink className='font-weight-bolder white-text' to='/contact'>Contact</MDBNavLink>
                                     </MDBNavItem>
                                 </MDBNavbarNav>
-                                {/* <MDBNavbarNav right>
-                                    <MDBNavItem>
-                                        <MDBFormInline waves>
-                                            <div className='md-form my-0'>
-                                                <input
-                                                    className='form-control mr-sm-2'
-                                                    type='text'
-                                                    placeholder='Search'
-                                                    aria-label='Search'
-                                                />
-                                            </div>
-                                        </MDBFormInline>
-                                    </MDBNavItem>
-                                </MDBNavbarNav> */}
                                 <MDBNavbarNav right>
                                     <MDBNavItem>
                                         <MDBNavLink link to='!#'>
