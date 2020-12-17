@@ -12,6 +12,7 @@ import {
     MDBRow,
     MDBCol,
     MDBFormInline,
+    MDBIcon,
     MDBBtn,
     MDBView,
     MDBContainer
@@ -20,6 +21,7 @@ import './1705Colors.css';
 // import './home.css';
 import Nav from './Nav';
 import bkgrd from '../assets/inspiration/vibes1.jpg';
+import streakpic from '../assets/inspiration/wedding1.jpg';
 import FooterPage from './Footer';
 
 class Home extends React.Component {
@@ -150,6 +152,40 @@ class Home extends React.Component {
                                 </MDBCol>
                             </MDBRow>
                         </MDBContainer>
+                        {/* STREAK */}
+                        <div>
+                            <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic + ")" }}>
+                                <div className='mask flex-center rgba-black-strong'>
+                                    <MDBContainer>
+                                        <h1 className='text-center white-text my-3 text-uppercase font-weight-bold'>Our Impact</h1>
+                                        <MDBRow className='white-text text-center'>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="utensils" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>519,000</h1>
+                                                <p className='font-weight-bold'>Meals Served</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="clock" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>21,914</h1>
+                                                <p className='font-weight-bold'>Volunteer Hours</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="dollar-sign" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>557,273</h1>
+                                                <p className='font-weight-bold'>Dollars Saved</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="home" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>372</h1>
+                                                <p className='font-weight-bold'>Homes Repaired</p>
+                                            </MDBCol>
+                                        </MDBRow>
+                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption>
+                                    </MDBContainer>
+                                </div>
+                            </div>
+                            {/* </MDBStreak> */}
+                        </div>
                     </main>
                     <footer>
                         <FooterPage />

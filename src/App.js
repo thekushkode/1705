@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import Home from './components/Home';
 import Contact from './components/Contact';
-import OurSpace from './components/OurSpace';
 import EventSpace from './components/EventSpace';
 
 function App() {

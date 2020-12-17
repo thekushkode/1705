@@ -2,3 +2,7 @@
     min-height: 100vh !important;
     height: unset !important;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
