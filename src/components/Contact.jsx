@@ -3,18 +3,11 @@ import {
     MDBRow,
     MDBCol,
     MDBContainer,
-    MDBTabPane,
-    MDBNavLink,
     MDBIcon,
-    MDBNav,
-    MDBNavItem,
-    MDBTabContent,
     MDBBtn,
     MDBCard,
     MDBInput,
     MDBCardBody,
-    MDBAvatar,
-    MDBIframe
 } from "mdbreact";
 import { Link } from 'react-router-dom';
 import './1705Colors.css';

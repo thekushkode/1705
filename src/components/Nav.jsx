@@ -13,12 +13,6 @@ import {
     MDBDropdownToggle,
     MDBDropdownMenu,
     MDBDropdownItem,
-    MDBMask,
-    MDBRow,
-    MDBCol,
-    MDBFormInline,
-    MDBBtn,
-    MDBView,
     MDBContainer
 } from 'mdbreact';
 import './home.css';

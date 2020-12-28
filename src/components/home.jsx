@@ -1,18 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import {
-    MDBNavbar,
-    MDBNavbarBrand,
-    MDBNavbarNav,
-    MDBNavItem,
-    MDBNavLink,
-    MDBNavbarToggler,
-    MDBCollapse,
     MDBMask,
     MDBRow,
     MDBCol,
-    MDBFormInline,
-    MDBIcon,
     MDBBtn,
     MDBView,
     MDBContainer

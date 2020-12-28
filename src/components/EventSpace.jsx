@@ -1,26 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import {
-    MDBNavbar,
-    MDBNavbarBrand,
-    MDBNavbarNav,
-    MDBNavItem,
-    MDBNavLink,
-    MDBNavbarToggler,
-    MDBCollapse,
     MDBMask,
     MDBRow,
     MDBCol,
-    MDBFormInline,
     MDBBtn,
     MDBView,
     MDBContainer,
     MDBCard,
     MDBCardBody,
-    MDBIcon,
 } from 'mdbreact';
 import './1705Colors.css';
-// import './home.css';
 import Nav from './Nav';
 import bkgrd from '../assets/space-photos/entrance.png';
 import patio from '../assets/space-photos/patio.png';
