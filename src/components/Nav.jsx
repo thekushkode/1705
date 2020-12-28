@@ -90,9 +90,9 @@ class Nav extends React.Component {
                                     <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='/eventspace'>Our Space</MDBNavLink>
                                     </MDBNavItem>
-                                    <MDBNavItem>
+                                    {/* <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='#'>Payments</MDBNavLink>
-                                    </MDBNavItem>
+                                    </MDBNavItem> */}
                                     <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='/contact'>Contact</MDBNavLink>
                                     </MDBNavItem>

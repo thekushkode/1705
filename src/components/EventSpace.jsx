@@ -76,7 +76,7 @@ class EventSpace extends React.Component {
                                         SEVENTEEN
                                     <span className='white-text font-weight-bold'>05</span>
                                     </h1> */}
-                                    <h1 className='display-3 text-uppercase mb-0 pt-md-5 pt-5 white-text font-weight-bold'>
+                                    <h1 className='display-3 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
                                         The Experience
                                     </h1>
                                     <hr className='hr-light my-4' />
@@ -98,7 +98,7 @@ class EventSpace extends React.Component {
                     <main>
                         <MDBCard className="px-5 pb-5">
                             <MDBCardBody>
-                                <h2 className="h1-responsive font-weight-bold text-center my-5">
+                                <h2 className="display-5 text-center py-3">
                                     Vibrant Spaces
                                 </h2>
                                 <p className="text-center w-responsive mx-auto mb-5">
@@ -107,7 +107,7 @@ class EventSpace extends React.Component {
                                     People, passions and plans come alive in our new state-of-the-art Atlanta event venue. Whether you are coming together for a purposeful meeting, team-building events, planning your next Gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying your surroundings.
                                 </p>
                                 <MDBRow>
-                                    <MDBCol lg="5">
+                                    <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                                             <img
                                                 className="img-fluid"
@@ -119,7 +119,7 @@ class EventSpace extends React.Component {
                                             </a>
                                         </MDBView>
                                     </MDBCol>
-                                    <MDBCol lg="7">
+                                    <MDBCol lg="5">
                                         <h3 className="font-weight-bold mb-3 p-0">
                                             <strong>Patio</strong>
                                         </h3>
@@ -136,7 +136,7 @@ class EventSpace extends React.Component {
                                 </MDBRow>
                                 <hr className="my-5" />
                                 <MDBRow>
-                                    <MDBCol lg="7">
+                                    <MDBCol lg="5">
                                         <h3 className="font-weight-bold mb-3 p-0">
                                             <strong>The Courtyard</strong>
                                         </h3>
@@ -153,7 +153,7 @@ class EventSpace extends React.Component {
                                             Book Now
                                         </MDBBtn>
                                     </MDBCol>
-                                    <MDBCol lg="5">
+                                    <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                                             <img
                                                 className="img-fluid"
@@ -168,7 +168,7 @@ class EventSpace extends React.Component {
                                 </MDBRow>
                                 <hr className="my-5" />
                                 <MDBRow>
-                                    <MDBCol lg="5">
+                                    <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                                             <img
                                                 className="img-fluid"
@@ -180,7 +180,7 @@ class EventSpace extends React.Component {
                                             </a>
                                         </MDBView>
                                     </MDBCol>
-                                    <MDBCol lg="7">
+                                    <MDBCol lg="5">
                                         <h3 className="font-weight-bold mb-3 p-0">
                                             <strong>Studio Experience</strong>
                                         </h3>

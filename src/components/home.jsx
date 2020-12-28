@@ -21,7 +21,12 @@ import './1705Colors.css';
 // import './home.css';
 import Nav from './Nav';
 import bkgrd from '../assets/inspiration/vibes1.jpg';
-import streakpic from '../assets/inspiration/wedding1.jpg';
+import streakpic1 from '../assets/inspiration/wedding1.jpg';
+import streakpic2 from '../assets/inspiration/champagne.jpg';
+import streakpic3 from '../assets/inspiration/plating.jpg';
+import space1 from '../assets/space-photos/entrance.png';
+import space2 from '../assets/space-photos/courtyard.png';
+import space3 from '../assets/space-photos/studio-experience.png';
 import FooterPage from './Footer';
 
 class Home extends React.Component {
@@ -72,13 +77,13 @@ class Home extends React.Component {
                                         SEVENTEEN
                                     <span className='white-text font-weight-bold'>05</span>
                                     </h1> */}
-                                    <h1 className='display-3-responsive mb-0 pt-md-5 pt-5 white-text font-weight-bold'>
-                                        SOPHISTICATED. WARM. APPROACHABLE.
+                                    <h1 className='display-1 mb-0 pt-md-5 pt-5 white-text'>
+                                        SEVENTEEN<span className='goldtext2'>05</span>
                                     </h1>
                                     <hr className='hr-light my-4' />
-                                    {/* <h5 className='h5-responsive text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold'>
-                                        Spectacular location in the heart of West Midtown!
-                                    </h5> */}
+                                    <h5 className='h5-responsive pb-3 white-text'>
+                                        Atlanta's premier event space in the heart of West Midtown!
+                                    </h5>
                                     <MDBBtn
                                         className='gold2 black-text'
                                         size='lg'
@@ -92,9 +97,13 @@ class Home extends React.Component {
                         </MDBContainer>
                     </MDBView>
                     <main>
-                        <MDBContainer>
-                            <MDBRow className='py-5'>
-                                <MDBCol md='12' className='text-center'>
+                        <div className='px-3'>
+                            <h1 className='h1-responsive text-center text-uppercase py-5'>Lorem Ipsum</h1>
+                            <MDBRow className='pb-5'>
+                                <MDBCol md='5'>
+                                    <img src={space1} alt='space image1' className='img-fluid' />
+                                </MDBCol>
+                                <MDBCol md='7' className='text-center'>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                         do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -104,7 +113,7 @@ class Home extends React.Component {
                                         dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                                         cupidatat non proident, sunt in culpa qui officia deserunt
                                         mollit anim id est laborum.
-                                </p>
+                                    </p>
                                     <p>
                                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                         accusantium doloremque laudantium, totam rem aperiam, eaque
@@ -115,50 +124,26 @@ class Home extends React.Component {
                                         nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
                                         dolor sit amet, consectetur, adipisci velit, sed quia non
                                         numquam eius modi tempora incidunt ut labore et dolore magnam
-                                        aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                        nostrum exercitationem ullam corporis suscipit laboriosam,
-                                        nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-                                        iure reprehenderit qui in ea voluptate velit esse quam nihil
-                                        molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                                        voluptas nulla pariatur?
-                                </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                        irure dolor in reprehenderit in voluptate velit esse cillum
-                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt
-                                        mollit anim id est laborum.
-                                </p>
-                                    <p>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                        accusantium doloremque laudantium, totam rem aperiam, eaque
-                                        ipsa quae ab illo inventore veritatis et quasi architecto
-                                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                                        quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                        consequuntur magni dolores eos qui ratione voluptatem sequi
-                                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                                        dolor sit amet, consectetur, adipisci velit, sed quia non
-                                        numquam eius modi tempora incidunt ut labore et dolore magnam
-                                        aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                                        nostrum exercitationem ullam corporis suscipit laboriosam,
-                                        nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-                                        iure reprehenderit qui in ea voluptate velit esse quam nihil
-                                        molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                                        voluptas nulla pariatur?
-                                </p>
+                                        aliquam quaerat voluptatem.
+                                    </p>
+                                    <MDBBtn
+                                        className='gold2 black-text'
+                                        size='lg'
+                                        href='#'
+                                        target='_blank'
+                                    >
+                                        Call To Action!
+                                    </MDBBtn>
                                 </MDBCol>
                             </MDBRow>
-                        </MDBContainer>
+                        </div>
                         {/* STREAK */}
                         <div>
-                            <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic + ")" }}>
+                            <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic1 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h1 className='text-center white-text my-3 text-uppercase font-weight-bold'>Our Impact</h1>
-                                        <MDBRow className='white-text text-center'>
+                                        <h1 className='display-1 text-center white-text my-3 text-uppercase'>Sophisticated.</h1>
+                                        {/* <MDBRow className='white-text text-center'>
                                             <MDBCol md='3' className='mb-2'>
                                                 <MDBIcon icon="utensils" size="2x" className="white-text" />
                                                 <h1 className='mx-2 font-weight-bold'>519,000</h1>
@@ -180,7 +165,165 @@ class Home extends React.Component {
                                                 <p className='font-weight-bold'>Homes Repaired</p>
                                             </MDBCol>
                                         </MDBRow>
-                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption>
+                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption> */}
+                                    </MDBContainer>
+                                </div>
+                            </div>
+                            {/* </MDBStreak> */}
+                        </div>
+                        <div className='px-3'>
+                            <MDBRow className='py-5'>
+                                <MDBCol md='7' className='text-center'>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                        irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                        cupidatat non proident, sunt in culpa qui officia deserunt
+                                        mollit anim id est laborum.
+                                    </p>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, totam rem aperiam, eaque
+                                        ipsa quae ab illo inventore veritatis et quasi architecto
+                                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                        quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi
+                                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                                        dolor sit amet, consectetur, adipisci velit, sed quia non
+                                        numquam eius modi tempora incidunt ut labore et dolore magnam
+                                        aliquam quaerat voluptatem.
+                                    </p>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, totam rem aperiam, eaque
+                                        ipsa quae ab illo inventore veritatis et quasi architecto
+                                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                        quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi
+                                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                                        dolor sit amet, consectetur, adipisci velit, sed quia non
+                                        numquam eius modi tempora incidunt ut labore et dolore magnam
+                                        aliquam quaerat voluptatem.
+                                    </p>
+                                    <MDBBtn
+                                        className='gold2 black-text'
+                                        size='lg'
+                                        href='#'
+                                        target='_blank'
+                                    >
+                                        Call To Action!
+                                    </MDBBtn>
+                                </MDBCol>
+                                <MDBCol md='5'>
+                                    <img src={space2} alt='space image1' className='img-fluid' />
+                                </MDBCol>
+                            </MDBRow>
+                        </div>
+                        {/* STREAK */}
+                        <div>
+                            <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic2 + ")" }}>
+                                <div className='mask flex-center rgba-black-strong'>
+                                    <MDBContainer>
+                                        <h1 className='display-1 text-center white-text my-3 text-uppercase'>Warm.</h1>
+                                        {/* <MDBRow className='white-text text-center'>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="utensils" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>519,000</h1>
+                                                <p className='font-weight-bold'>Meals Served</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="clock" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>21,914</h1>
+                                                <p className='font-weight-bold'>Volunteer Hours</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="dollar-sign" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>557,273</h1>
+                                                <p className='font-weight-bold'>Dollars Saved</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="home" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>372</h1>
+                                                <p className='font-weight-bold'>Homes Repaired</p>
+                                            </MDBCol>
+                                        </MDBRow>
+                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption> */}
+                                    </MDBContainer>
+                                </div>
+                            </div>
+                            {/* </MDBStreak> */}
+                        </div>
+                        <div className='px-3'>
+                            <MDBRow className='py-5'>
+                                <MDBCol md='5'>
+                                    <img src={space3} alt='space image1' className='img-fluid' />
+                                </MDBCol>
+                                <MDBCol md='7' className='text-center'>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                        irure dolor in reprehenderit in voluptate velit esse cillum
+                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                        cupidatat non proident, sunt in culpa qui officia deserunt
+                                        mollit anim id est laborum.
+                                    </p>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, totam rem aperiam, eaque
+                                        ipsa quae ab illo inventore veritatis et quasi architecto
+                                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                        quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi
+                                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                                        dolor sit amet, consectetur, adipisci velit, sed quia non
+                                        numquam eius modi tempora incidunt ut labore et dolore magnam
+                                        aliquam quaerat voluptatem.
+                                    </p>
+                                    <MDBBtn
+                                        className='gold2 black-text'
+                                        size='lg'
+                                        href='#'
+                                        target='_blank'
+                                    >
+                                        Call To Action!
+                                    </MDBBtn>
+                                </MDBCol>
+                            </MDBRow>
+                        </div>
+                        {/* STREAK */}
+                        <div>
+                            <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic3 + ")" }}>
+                                <div className='mask flex-center rgba-black-strong'>
+                                    <MDBContainer>
+                                        <h1 className='display-1 text-center white-text my-3 text-uppercase'>Approachable.</h1>
+                                        {/* <MDBRow className='white-text text-center'>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="utensils" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>519,000</h1>
+                                                <p className='font-weight-bold'>Meals Served</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="clock" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>21,914</h1>
+                                                <p className='font-weight-bold'>Volunteer Hours</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="dollar-sign" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>557,273</h1>
+                                                <p className='font-weight-bold'>Dollars Saved</p>
+                                            </MDBCol>
+                                            <MDBCol md='3' className='mb-2'>
+                                                <MDBIcon icon="home" size="2x" className="white-text" />
+                                                <h1 className='mx-2 font-weight-bold'>372</h1>
+                                                <p className='font-weight-bold'>Homes Repaired</p>
+                                            </MDBCol>
+                                        </MDBRow>
+                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption> */}
                                     </MDBContainer>
                                 </div>
                             </div>

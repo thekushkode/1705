@@ -46,7 +46,7 @@ class Contact extends Component {
                             <MDBContainer>
 
                                 <section className="my-5">
-                                    <h2 className="h1-responsive font-weight-bold goldtext2 text-center pt-5 my-5">
+                                    <h2 className="display-3 goldtext2 text-center pt-5 my-5">
                                         Contact Us!
                                 </h2>
                                     <p className="text-center w-responsive white-text mx-auto pb-5">
@@ -129,15 +129,15 @@ class Contact extends Component {
                                                     <MDBBtn tag="a" floating className="gold2">
                                                         <MDBIcon className='black-text' icon="map-marker-alt" />
                                                     </MDBBtn>
-                                                    <p className='goldtext2'>New York, 94126</p>
+                                                    <p className='goldtext2'>Atlanta, 30318</p>
                                                     <p className="mb-md-0 goldtext2">United States</p>
                                                 </MDBCol>
                                                 <MDBCol md="4">
                                                     <MDBBtn tag="a" floating className="gold2">
                                                         <MDBIcon className='black-text' icon="phone" />
                                                     </MDBBtn>
-                                                    <p className='goldtext2'>+ 01 234 567 89</p>
-                                                    <p className="mb-md-0 goldtext2">Mon - Fri, 8:00-22:00</p>
+                                                    <p className='goldtext2'>404.555.1234</p>
+                                                    <p className="mb-md-0 goldtext2">Mon - Fri, 8:00-5:00</p>
                                                 </MDBCol>
                                                 <MDBCol md="4">
                                                     <MDBBtn tag="a" floating className="gold2">
