@@ -69,9 +69,9 @@ class Nav extends React.Component {
                             <MDBCollapse isOpen={collapsed} navbar>
                                 <MDBNavbarNav left>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder white-text' to='#'>Gatherings</MDBNavLink>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='#'>Corporate Gatherings</MDBNavLink>
                                     </MDBNavItem>
-                                    <MDBDropdown>
+                                    {/* <MDBDropdown>
                                         <MDBDropdownToggle nav caret className='white-text'>
                                             <span className="font-weight-bolder white-text">Events</span>
                                         </MDBDropdownToggle>
@@ -80,7 +80,10 @@ class Nav extends React.Component {
                                             <MDBDropdownItem className='p-0'><MDBNavLink to='#' className='black-text'>Conferences</MDBNavLink></MDBDropdownItem>
                                             <MDBDropdownItem className='p-0'><MDBNavLink to='#' className='black-text'>Galas</MDBNavLink></MDBDropdownItem>
                                         </MDBDropdownMenu>
-                                    </MDBDropdown>
+                                    </MDBDropdown> */}
+                                    <MDBNavItem>
+                                        <MDBNavLink className='font-weight-bolder white-text' to='/#'>Weddings & More</MDBNavLink>
+                                    </MDBNavItem>
                                     <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='/eventspace'>Our Space</MDBNavLink>
                                     </MDBNavItem>
