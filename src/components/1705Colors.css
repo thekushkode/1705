@@ -1,5 +1,5 @@
-
 /* First rule is for home page CSS only */
+
 #parallaxintro .view {
     min-height: 100vh !important;
     height: unset !important;
@@ -33,4 +33,16 @@ body {
     background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
     background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
     background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
+}
+
+/* .lightgradient {
+    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
+} */
+
+@media (max-width: 991.98px) {
+    .largeText {
+        font-size: 50px !important;
+    }
 }

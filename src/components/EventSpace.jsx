@@ -9,7 +9,9 @@ import {
     MDBContainer,
     MDBCard,
     MDBCardBody,
+    MDBIcon
 } from 'mdbreact';
+import { Link } from "react-router-dom";
 import './1705Colors.css';
 import Nav from './Nav';
 import bkgrd from '../assets/space-photos/entrance.png';
@@ -55,7 +57,8 @@ class EventSpace extends React.Component {
                         src={bkgrd}
                         fixed
                     >
-                        <MDBMask className='whitegradient' />
+                        {/* <MDBMask className='whitegradient' /> */}
+                        <MDBMask overlay='stylish-strong' />
                         <MDBContainer
                             className='d-flex justify-content-center align-items-center'
                             style={{ height: '100%', width: '100%', paddingTop: '5rem' }}
@@ -66,7 +69,7 @@ class EventSpace extends React.Component {
                                         SEVENTEEN
                                     <span className='white-text font-weight-bold'>05</span>
                                     </h1> */}
-                                    <h1 className='display-3 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
+                                    <h1 className='largeText display-3 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
                                         The Experience
                                     </h1>
                                     <hr className='hr-light my-4' />
@@ -91,11 +94,35 @@ class EventSpace extends React.Component {
                                 <h2 className="display-5 text-center py-3">
                                     Vibrant Spaces
                                 </h2>
-                                <p className="text-center w-responsive mx-auto mb-5">
+                                <p className="text-center w-responsive mx-auto mb-3">
                                     The experience at Seventeen05 has been designed as a dynamic interplay between spaces crafted to maximize your vision of an event.
                                     Spacious event options featuring a welcoming background of contemporary art and design, unparalleled style for any gathering.
                                     People, passions and plans come alive in our new state-of-the-art Atlanta event venue. Whether you are coming together for a purposeful meeting, team-building events, planning your next Gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying your surroundings.
                                 </p>
+                                <div className='mb-4' >
+                                    <div className='streak streak-photo streak-long-1'>
+                                        <div className='mask flex-center'>
+                                            <MDBContainer>
+                                                <MDBRow className='black-text text-center'>
+                                                    <MDBCol md='4' className='mb-2'>
+                                                        <h1 className='mx-2 font-weight-bold'>7</h1>
+                                                        <p className='font-weight-bold'>Event Rooms</p>
+                                                    </MDBCol>
+                                                    <MDBCol md='4' className='mb-2'>
+                                                        <h1 className='mx-2 font-weight-bold'>2,401 sq ft</h1>
+                                                        <p className='font-weight-bold'>Total Event Space</p>
+                                                    </MDBCol>
+                                                    <MDBCol md='4' className='mb-2'>
+                                                        <h1 className='mx-2 font-weight-bold'>200</h1>
+                                                        <p className='font-weight-bold'>Capacity Largest Space</p>
+                                                    </MDBCol>
+                                                </MDBRow>
+                                                {/* <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption> */}
+                                            </MDBContainer>
+                                        </div>
+                                    </div>
+                                    {/* </MDBStreak> */}
+                                </div>
                                 <MDBRow>
                                     <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
@@ -180,8 +207,8 @@ class EventSpace extends React.Component {
                                             voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia
                                             sit amet.
                                         </p>
-                                        <MDBBtn  size="md" className="gold2 black-text waves-light ">
-                                            Read more
+                                        <MDBBtn size="md" className="gold2 black-text waves-light ">
+                                            Book Now
                                         </MDBBtn>
                                     </MDBCol>
                                 </MDBRow>
