@@ -71,7 +71,7 @@ class Events extends React.Component {
                             <MDBRow>
                                 <MDBCol md='12' className='mb-4 white-text text-center'>
                                     <h1 className='largeText display-3 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
-                                        Our Spaces
+                                        Events
                                     </h1>
                                     <hr className='hr-light my-4' />
                                     <h5 className='h5-responsive pb-3 white-text font-weight-bolder'>
@@ -120,7 +120,7 @@ class Events extends React.Component {
                                 <MDBCol md="4">
                                     {/* <MDBIcon far icon="comments" size="3x" className="orange-text" /> */}
                                     <img src={entrance} alt='' className='d-block img-fluid' />
-                                    <h5 className="font-weight-bold my-4">Bar / Bat Mitzvahs</h5>
+                                    <h5 className="font-weight-bold my-4">Mitzvahs & More</h5>
                                     <p className="grey-text mb-md-0 mb-5">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                         Reprehenderit maiores aperiam minima assumenda deleniti hic.

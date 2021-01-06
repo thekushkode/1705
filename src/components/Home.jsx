@@ -73,16 +73,16 @@ class Home extends React.Component {
                                     </h1>
                                     <hr className='hr-light my-4' />
                                     <h5 className='h5-responsive pb-3 white-text'>
-                                        Atlanta's premier event space in the heart of West Midtown!
+                                        Atlanta's premier event space in the heart of West Midtown
                                     </h5>
-                                    <MDBBtn
+                                    {/* <MDBBtn
                                         className='gold2 black-text'
                                         size='lg'
                                         href='#'
                                         target='_blank'
                                     >
                                         Book Your Event!
-                                    </MDBBtn>
+                                    </MDBBtn> */}
                                 </MDBCol>
                             </MDBRow>
                         </MDBContainer>
