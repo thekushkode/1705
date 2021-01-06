@@ -68,9 +68,9 @@ class Nav extends React.Component {
                             <MDBNavbarToggler onClick={this.handleTogglerClick} />
                             <MDBCollapse isOpen={collapsed} navbar>
                                 <MDBNavbarNav left>
-                                    <MDBNavItem>
+                                    {/* <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='#'>Corporate Gatherings</MDBNavLink>
-                                    </MDBNavItem>
+                                    </MDBNavItem> */}
                                     {/* <MDBDropdown>
                                         <MDBDropdownToggle nav caret className='white-text'>
                                             <span className="font-weight-bolder white-text">Events</span>
@@ -82,16 +82,16 @@ class Nav extends React.Component {
                                         </MDBDropdownMenu>
                                     </MDBDropdown> */}
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder white-text' to='/#'>Weddings & More</MDBNavLink>
+                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text' to='/spaces'>Our Space</MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder white-text' to='/eventspace'>Our Space</MDBNavLink>
+                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text' to='/events'>Events</MDBNavLink>
                                     </MDBNavItem>
                                     {/* <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='#'>Payments</MDBNavLink>
                                     </MDBNavItem> */}
                                     <MDBNavItem>
-                                        <MDBNavLink className='font-weight-bolder white-text' to='/contact'>Contact</MDBNavLink>
+                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text' to='/contact'>Contact</MDBNavLink>
                                     </MDBNavItem>
                                 </MDBNavbarNav>
                                 <MDBNavbarNav right>

@@ -36,6 +36,11 @@ class EventSpace extends React.Component {
     // componentWillUnmount() {
     //     document.querySelector('nav').style.height = 'auto';
     // }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         // const navStyle = { marginTop: '0rem' };
         // const overlay = (
@@ -105,11 +110,11 @@ class EventSpace extends React.Component {
                                             <MDBContainer>
                                                 <MDBRow className='black-text text-center'>
                                                     <MDBCol md='4' className='mb-2'>
-                                                        <h1 className='mx-2 font-weight-bold'>7</h1>
-                                                        <p className='font-weight-bold'>Event Rooms</p>
+                                                        <h1 className='mx-2 font-weight-bold'>5</h1>
+                                                        <p className='font-weight-bold'>Event Spaces</p>
                                                     </MDBCol>
                                                     <MDBCol md='4' className='mb-2'>
-                                                        <h1 className='mx-2 font-weight-bold'>2,401 sq ft</h1>
+                                                        <h1 className='mx-2 font-weight-bold'>11,880 sq ft</h1>
                                                         <p className='font-weight-bold'>Total Event Space</p>
                                                     </MDBCol>
                                                     <MDBCol md='4' className='mb-2'>

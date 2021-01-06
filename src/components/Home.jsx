@@ -57,10 +57,10 @@ class Home extends React.Component {
                         src={bkgrd}
                         fixed
                     >
-                        <MDBMask className='whitegradient' />
+                        <MDBMask className='whitegradient' style={{ backgroundColor: 'rgb(172, 130, 73)' }} />
                         <MDBContainer
                             className='d-flex justify-content-center align-items-center'
-                            style={{ height: '100%', width: '100%', paddingTop: '5rem' }}
+                            style={{ backgroundColor: 'rgb(172, 130, 73)', height: '100%', width: '100%', paddingTop: '5rem' }}
                         >
                             <MDBRow>
                                 <MDBCol md='12' className='mb-4 white-text text-center'>
@@ -133,7 +133,7 @@ class Home extends React.Component {
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic1 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Sophisticated.</h1>
+                                        <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Sophisticated</h1>
                                         {/* <MDBRow className='white-text text-center'>
                                             <MDBCol md='3' className='mb-2'>
                                                 <MDBIcon icon="utensils" size="2x" className="white-text" />
@@ -218,7 +218,7 @@ class Home extends React.Component {
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic2 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Warm.</h1>
+                                        <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Warm</h1>
                                         {/* <MDBRow className='white-text text-center'>
                                             <MDBCol md='3' className='mb-2'>
                                                 <MDBIcon icon="utensils" size="2x" className="white-text" />
@@ -291,7 +291,7 @@ class Home extends React.Component {
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic3 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Approachable.</h1>
+                                        <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Approachable</h1>
                                         {/* <MDBRow className='white-text text-center'>
                                             <MDBCol md='3' className='mb-2'>
                                                 <MDBIcon icon="utensils" size="2x" className="white-text" />
@@ -326,7 +326,7 @@ class Home extends React.Component {
                                     <MDBContainer>
                                         <div style={{ backgroundColor: 'white' }}>
 
-                                            <h1 className='largeText display-3 text-center black-text my-3 text-uppercase' >Memorable.</h1>
+                                            <h1 className='largeText display-3 text-center black-text my-3 text-uppercase' >Memorable</h1>
                                             <hr className='gold mx-5' />
                                             <h5 className='h5-responsive text-center text-uppercase p-4 black-text'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                         accusantium doloremque laudantium, totam rem aperiam, eaque

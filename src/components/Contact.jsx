@@ -47,7 +47,7 @@ class Contact extends Component {
                                         error amet numquam iure provident voluptate esse quasi, veritatis
                                         totam voluptas nostrum quisquam eum porro a pariatur veniam.
                                 </p>
-                                    <MDBRow>
+                                    {/* <MDBRow>
                                         <MDBCol lg="5" className="lg-0 mb-4">
                                             <MDBCard>
                                                 <MDBCardBody>
@@ -108,7 +108,7 @@ class Contact extends Component {
                                                 style={{ height: "400px" }}
                                             >
                                                 <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593.4132480487948!2d-84.41094301478257!3d33.80069312835111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504e3b6e56c0d%3A0x5207de5aee044f00!2s1705%20Commerce%20Dr%20NW%2C%20Atlanta%2C%20GA%2030318!5e0!3m2!1sen!2sus!4v1608133859618!5m2!1sen!2sus" 
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593.4132480487948!2d-84.41094301478257!3d33.80069312835111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504e3b6e56c0d%3A0x5207de5aee044f00!2s1705%20Commerce%20Dr%20NW%2C%20Atlanta%2C%20GA%2030318!5e0!3m2!1sen!2sus!4v1608133859618!5m2!1sen!2sus"
                                                     title="1705 Event Space"
                                                     width="100%"
                                                     height="100%"
@@ -140,6 +140,71 @@ class Contact extends Component {
                                                     <p className="mb-md-0 goldtext2">sale@gmail.com</p>
                                                 </MDBCol>
                                             </MDBRow>
+                                        </MDBCol>
+                                    </MDBRow> */}
+                                    <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)'}}>
+                                        <MDBCol md="9" className="md-0 mb-5 pt-3">
+                                            <form>
+                                                <MDBRow>
+                                                    <MDBCol md="6">
+                                                        <div className="md-form mb-0">
+                                                            <MDBInput type="text" id="contact-name" label="Your name"
+                                                            className='white-text' />
+                                                        </div>
+                                                    </MDBCol>
+                                                    <MDBCol md="6">
+                                                        <div className="md-form mb-0">
+                                                            <MDBInput
+                                                                type="text"
+                                                                id="contact-email"
+                                                                label="Your email"
+                                                                className='white-text'
+                                                            />
+                                                        </div>
+                                                    </MDBCol>
+                                                </MDBRow>
+                                                <MDBRow>
+                                                    <MDBCol md="12">
+                                                        <div className="md-form mb-0">
+                                                            <MDBInput type="text" id="contact-subject" label="Subject"
+                                                            className='white-text' />
+                                                        </div>
+                                                    </MDBCol>
+                                                </MDBRow>
+                                                <MDBRow>
+                                                    <MDBCol md="12">
+                                                        <div className="md-form mb-0">
+                                                            <MDBInput
+                                                                type="textarea"
+                                                                id="contact-message"
+                                                                label="Your message"
+                                                                className='white-text'
+                                                            />
+                                                        </div>
+                                                    </MDBCol>
+                                                </MDBRow>
+                                            </form>
+                                            <div className="text-center text-md-left">
+                                                <MDBBtn className='gold' size="lg btn-rounded">
+                                                    Send
+                                                </MDBBtn>
+                                            </div>
+                                        </MDBCol>
+                                        <MDBCol md="3" className="text-center pt-5">
+                                            <ul className="list-unstyled mb-0">
+                                                <li>
+                                                    <MDBIcon icon="map-marker-alt" size="2x" className="goldtext" />
+                                                    <p className="goldtext2">Atlanta, GA 30318, USA</p>
+                                                </li>
+                                                <li>
+                                                    <MDBIcon icon="phone" size="2x" className="goldtext mt-4" />
+                                                    <p className="goldtext2">+ 01 234 567 89</p>
+                                                </li>
+                                                <li>
+                                                    <MDBIcon icon="envelope" size="2x" className="goldtext mt-4" />
+                                                    <p className="goldtext2">contact@example.com</p>
+                                                </li>
+                                            </ul>
                                         </MDBCol>
                                     </MDBRow>
                                 </section>
