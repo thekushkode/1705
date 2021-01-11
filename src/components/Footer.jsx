@@ -8,31 +8,30 @@ const FooterPage = () => {
         <MDBFooter color="black" className="font-small pt-4 mt-4">
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow >
-                    <MDBCol md='4'>
-                        <h5 className="title goldtext">Footer Content</h5>
+                    <MDBCol md='6'>
+                        <h5 className="title goldtext">Seventeen05</h5>
                         <p>
-                            Here you can use rows and columns here to organize your footer
-                            content.
+                            1705 Commerce Drive NW<br/>Atlanta, GA 30318
                         </p>
                     </MDBCol>
-                    <MDBCol md='4'>
+                    {/* <MDBCol md='6'>
                         <img src={logo3} alt='1705 logo' className='img-fluid d-block'/>
-                    </MDBCol>
-                    <MDBCol md='4' className='text-right'>
-                        <h5 className="title goldtext">Links</h5>
+                    </MDBCol> */}
+                    <MDBCol md='6' className='text-right'>
+                        <h5 className="title goldtext">Quick Links</h5>
                         <ul>
                             <li className="list-unstyled">
-                                <a href="#!">Link 1</a>
+                                <a href="#!">Events</a>
                             </li>
                             <li className="list-unstyled">
-                                <a href="#!">Link 2</a>
+                                <a href="#!">Our Space</a>
                             </li>
                             <li className="list-unstyled">
-                                <a href="#!">Link 3</a>
+                                <a href="#!">Contact Us</a>
                             </li>
-                            <li className="list-unstyled">
+                            {/* <li className="list-unstyled">
                                 <a href="#!">Link 4</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </MDBCol>
                 </MDBRow>

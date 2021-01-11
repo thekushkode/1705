@@ -146,10 +146,7 @@ class EventSpace extends React.Component {
                                             <strong>Patio</strong>
                                         </h3>
                                         <p>
-                                            Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                                            nihil impedit quo minus id quod maxime placeat facere possimus,
-                                            omnis voluptas assumenda est, omnis dolor repellendus et aut
-                                            officiis debitis.
+                                            The Patio boasts a variety of different features including a outdoor contemporary, bar, open kitchen, perfectly designed landscape lighting with exposed wood beams.  This space is ideal for an event reception.
                                         </p>
                                         <MDBBtn size="md" className="gold2 black-text waves-light ">
                                             Book Now
@@ -163,10 +160,7 @@ class EventSpace extends React.Component {
                                             <strong>The Courtyard</strong>
                                         </h3>
                                         <p>
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                            blanditiis praesentium voluptatum deleniti atque corrupti quos
-                                            dolores et quas molestias excepturi sint occaecati cupiditate
-                                            non provident.
+                                            An outdoor intimate event space which can accommodate social gatherings such as rehearsal dinners or wedding ceremonies as well as a great corporate cocktail reception.  It can accommodate gatherings up to 100 guests.
                                         </p>
                                         <MDBBtn
                                             size="md"
@@ -207,10 +201,7 @@ class EventSpace extends React.Component {
                                             <strong>Studio Experience</strong>
                                         </h3>
                                         <p>
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                                            aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                            voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia
-                                            sit amet.
+                                            The Experience Studio is a state of the art demo kitchen that features views to the Patio and Courtyard.  It is a great location for cooking demonstrations or lunches or dinners of social or corporate nature for approximately 30 guests
                                         </p>
                                         <MDBBtn size="md" className="gold2 black-text waves-light ">
                                             Book Now

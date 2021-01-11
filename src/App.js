@@ -4,7 +4,8 @@ import ReactGA from 'react-ga';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import EventSpace from './components/EventSpace';
-import Events from './components/Events';
+import EventsPage from './components/EventsPage';
+import EmailThankYou from './components/EmailThankYou';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Route exact path='/' component={Home} />
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/spaces' component={EventSpace} />
-      <Route exact path='/events' component={Events} />
+      <Route exact path='/events' component={EventsPage} />
+      <Route exact path='/email-received' component={EmailThankYou} />
     </Switch>
   );
 }

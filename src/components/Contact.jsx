@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Redirect } from 'react-router-dom';
 import {
     MDBRow,
     MDBCol,
@@ -8,8 +9,11 @@ import {
     MDBCard,
     MDBInput,
     MDBCardBody,
+    MDBSelect,
+    MDBSelectOptions,
+    MDBSelectOption,
+    MDBSelectInput,
 } from "mdbreact";
-import { Link } from 'react-router-dom';
 import './1705Colors.css';
 import bkgrnd from '../assets/space-photos/patio.png';
 import Nav from "./Nav";
@@ -17,12 +21,46 @@ import FooterPage from "./Footer";
 
 
 class Contact extends Component {
+    constructor(props) {
+        super(props);
+        this.submitForm = this.submitForm.bind(this);
+        this.state = {
+            status: "",
+            eventType: [],
+        };
+    }
 
     componentDidMount() {
         window.scrollTo(0, 0)
     }
 
+    handleeventType = (e) => {
+        this.setState({
+            eventType: e[0]
+        })
+    }
+
+    submitForm(ev) {
+        ev.preventDefault();
+        const form = ev.target;
+        const data = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                form.reset();
+                this.setState({ status: "SUCCESS" });
+            } else {
+                this.setState({ status: "ERROR" });
+            }
+        };
+        xhr.send(data);
+    }
+
     render() {
+        const { status } = this.state;
         return (
             <div>
                 <header>
@@ -47,109 +85,17 @@ class Contact extends Component {
                                         error amet numquam iure provident voluptate esse quasi, veritatis
                                         totam voluptas nostrum quisquam eum porro a pariatur veniam.
                                 </p>
-                                    {/* <MDBRow>
-                                        <MDBCol lg="5" className="lg-0 mb-4">
-                                            <MDBCard>
-                                                <MDBCardBody>
-                                                    <div className="form-header gold2">
-                                                        <h3 className="mt-2 black-text">
-                                                            <MDBIcon icon="envelope" /> Write to us:
-                                                        </h3>
-                                                    </div>
-                                                    <p className="dark-grey-text">
-                                                        We'll write rarely, but only the best content.
-                                                    </p>
-                                                    <div className="md-form">
-                                                        <MDBInput
-                                                            icon="user"
-                                                            label="Your name"
-                                                            iconClass="grey-text"
-                                                            type="text"
-                                                            id="form-name"
-                                                        />
-                                                    </div>
-                                                    <div className="md-form">
-                                                        <MDBInput
-                                                            icon="envelope"
-                                                            label="Your email"
-                                                            iconClass="grey-text"
-                                                            type="text"
-                                                            id="form-email"
-                                                        />
-                                                    </div>
-                                                    <div className="md-form">
-                                                        <MDBInput
-                                                            icon="tag"
-                                                            label="Subject"
-                                                            iconClass="grey-text"
-                                                            type="text"
-                                                            id="form-subject"
-                                                        />
-                                                    </div>
-                                                    <div className="md-form">
-                                                        <MDBInput
-                                                            icon="pencil-alt"
-                                                            label="Message"
-                                                            iconClass="grey-text"
-                                                            type="textarea"
-                                                            id="form-text"
-                                                        />
-                                                    </div>
-                                                    <div className="text-center">
-                                                        <MDBBtn className="gold2 black-text">Submit</MDBBtn>
-                                                    </div>
-                                                </MDBCardBody>
-                                            </MDBCard>
-                                        </MDBCol>
-                                        <MDBCol lg="7">
-                                            <div
-                                                id="map-container"
-                                                className="rounded z-depth-1-half map-container"
-                                                style={{ height: "400px" }}
-                                            >
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593.4132480487948!2d-84.41094301478257!3d33.80069312835111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504e3b6e56c0d%3A0x5207de5aee044f00!2s1705%20Commerce%20Dr%20NW%2C%20Atlanta%2C%20GA%2030318!5e0!3m2!1sen!2sus!4v1608133859618!5m2!1sen!2sus"
-                                                    title="1705 Event Space"
-                                                    width="100%"
-                                                    height="100%"
-                                                    frameBorder="0"
-                                                    style={{ border: 0 }}
-                                                />
-                                            </div>
-                                            <br />
-                                            <MDBRow className="text-center">
-                                                <MDBCol md="4">
-                                                    <MDBBtn tag="a" floating className="gold2">
-                                                        <MDBIcon className='black-text' icon="map-marker-alt" />
-                                                    </MDBBtn>
-                                                    <p className='goldtext2'>Atlanta, 30318</p>
-                                                    <p className="mb-md-0 goldtext2">United States</p>
-                                                </MDBCol>
-                                                <MDBCol md="4">
-                                                    <MDBBtn tag="a" floating className="gold2">
-                                                        <MDBIcon className='black-text' icon="phone" />
-                                                    </MDBBtn>
-                                                    <p className='goldtext2'>404.555.1234</p>
-                                                    <p className="mb-md-0 goldtext2">Mon - Fri, 8:00-5:00</p>
-                                                </MDBCol>
-                                                <MDBCol md="4">
-                                                    <MDBBtn tag="a" floating className="gold2">
-                                                        <MDBIcon className='black-text' icon="envelope" />
-                                                    </MDBBtn>
-                                                    <p className='goldtext2'>info@gmail.com</p>
-                                                    <p className="mb-md-0 goldtext2">sale@gmail.com</p>
-                                                </MDBCol>
-                                            </MDBRow>
-                                        </MDBCol>
-                                    </MDBRow> */}
-                                    <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)'}}>
+
+                                    <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)' }}>
                                         <MDBCol md="9" className="md-0 mb-5 pt-3">
-                                            <form>
+                                            <form onSubmit={this.submitForm}
+                                                action="https://formspree.io/f/moqpykoo"
+                                                method="POST">
                                                 <MDBRow>
                                                     <MDBCol md="6">
                                                         <div className="md-form mb-0">
-                                                            <MDBInput type="text" id="contact-name" label="Your name"
-                                                            className='white-text' />
+                                                            <MDBInput type="text" id="contact-name" label="Your Name"
+                                                                className='white-text' name='Name' />
                                                         </div>
                                                     </MDBCol>
                                                     <MDBCol md="6">
@@ -157,17 +103,64 @@ class Contact extends Component {
                                                             <MDBInput
                                                                 type="text"
                                                                 id="contact-email"
-                                                                label="Your email"
+                                                                label="Your Email"
                                                                 className='white-text'
+                                                                name='Email'
                                                             />
                                                         </div>
                                                     </MDBCol>
                                                 </MDBRow>
                                                 <MDBRow>
-                                                    <MDBCol md="12">
+                                                    <MDBCol md="6">
                                                         <div className="md-form mb-0">
-                                                            <MDBInput type="text" id="contact-subject" label="Subject"
-                                                            className='white-text' />
+                                                            <MDBInput type="text" id="contact-phone" label="Your Phone"
+                                                                className='white-text' name='Phone' />
+                                                        </div>
+                                                    </MDBCol>
+                                                    <MDBCol md="6">
+                                                        <div className="md-form mb-0">
+                                                            <MDBInput
+                                                                type="text"
+                                                                id="event-name"
+                                                                label="Name of Event"
+                                                                className='white-text'
+                                                                name='Name of Event'
+                                                            />
+                                                        </div>
+                                                    </MDBCol>
+                                                </MDBRow>
+                                                <MDBRow>
+                                                    <MDBCol md="4">
+                                                        <div className="md-form mb-0">
+                                                            <MDBInput type="text" id="date-of-event" label="Date of Event"
+                                                                className='white-text' name='Date of Event' />
+                                                        </div>
+                                                    </MDBCol>
+                                                    <MDBCol md="4">
+                                                        <div className="md-form mb-0">
+                                                            <MDBInput
+                                                                type="text"
+                                                                id="number-of-guests"
+                                                                label="Number of Guests"
+                                                                name='Number of Guests'
+                                                                className='white-text'
+                                                            />
+                                                        </div>
+                                                    </MDBCol>
+                                                    <MDBCol md="4">
+                                                        <div>
+                                                            <MDBInput name='Event Type' value={this.state.eventType} hidden></MDBInput>
+                                                            <MDBSelect getValue={(e) => this.handleeventType(e)}
+                                                                label='Event Type:'>
+                                                                <MDBSelectInput id='volunteer' name='Event Type:' className='white-text' />
+                                                                <MDBSelectOptions>
+                                                                    <MDBSelectOption value="Wedding" name="Wedding">Wedding</MDBSelectOption>
+                                                                    <MDBSelectOption value="Business Delivery" name="Business Delivery">Business</MDBSelectOption>
+                                                                    <MDBSelectOption value="Mitzvah" name="Mitzvah">Mitzvah</MDBSelectOption>
+                                                                    <MDBSelectOption value="Social Event" name="Social Event">Social Event</MDBSelectOption>
+                                                                    <MDBSelectOption value="Other" name="Other">Other</MDBSelectOption>
+                                                                </MDBSelectOptions>
+                                                            </MDBSelect>
                                                         </div>
                                                     </MDBCol>
                                                 </MDBRow>
@@ -176,19 +169,22 @@ class Contact extends Component {
                                                         <div className="md-form mb-0">
                                                             <MDBInput
                                                                 type="textarea"
-                                                                id="contact-message"
-                                                                label="Your message"
+                                                                id="additional-details"
+                                                                name='Additional Details'
+                                                                label="Additional Details"
                                                                 className='white-text'
                                                             />
                                                         </div>
                                                     </MDBCol>
                                                 </MDBRow>
-                                            </form>
-                                            <div className="text-center text-md-left">
-                                                <MDBBtn className='gold' size="lg btn-rounded">
-                                                    Send
+                                                <div className="text-center text-md-left">
+                                                    <MDBBtn type='submit' className='gold' size="lg btn-rounded">
+                                                        Send
                                                 </MDBBtn>
-                                            </div>
+                                                    {status === 'SUCCESS' && <Redirect to='/email-received' />}
+                                                    {status === 'ERROR' && <p className='white-text'>Oops! There was an error. Please try again.</p>}
+                                                </div>
+                                            </form>
                                         </MDBCol>
                                         <MDBCol md="3" className="text-center pt-5">
                                             <ul className="list-unstyled mb-0">

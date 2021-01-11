@@ -73,7 +73,7 @@ class Home extends React.Component {
                                     </h1>
                                     <hr className='hr-light my-4' />
                                     <h5 className='h5-responsive pb-3 white-text'>
-                                        Atlanta's premier event space in the heart of West Midtown
+                                        OPENING FALL 2021
                                     </h5>
                                     {/* <MDBBtn
                                         className='gold2 black-text'
@@ -87,7 +87,7 @@ class Home extends React.Component {
                             </MDBRow>
                         </MDBContainer>
                     </MDBView>
-                    <main>
+                    {/* <main>
                         <div className='px-3'>
                             <h1 className='h1-responsive text-center text-uppercase py-5'>Lorem Ipsum</h1>
                             <MDBRow className='pb-5'>
@@ -128,39 +128,15 @@ class Home extends React.Component {
                                 </MDBCol>
                             </MDBRow>
                         </div>
-                        {/* STREAK */}
+                        
                         <div>
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic1 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
                                         <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Sophisticated</h1>
-                                        {/* <MDBRow className='white-text text-center'>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="utensils" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>519,000</h1>
-                                                <p className='font-weight-bold'>Meals Served</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="clock" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>21,914</h1>
-                                                <p className='font-weight-bold'>Volunteer Hours</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="dollar-sign" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>557,273</h1>
-                                                <p className='font-weight-bold'>Dollars Saved</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="home" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>372</h1>
-                                                <p className='font-weight-bold'>Homes Repaired</p>
-                                            </MDBCol>
-                                        </MDBRow>
-                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption> */}
                                     </MDBContainer>
                                 </div>
                             </div>
-                            {/* </MDBStreak> */}
                         </div>
                         <div className='px-3'>
                             <MDBRow className='py-5'>
@@ -213,39 +189,16 @@ class Home extends React.Component {
                                 </MDBCol>
                             </MDBRow>
                         </div>
-                        {/* STREAK */}
+                        
                         <div>
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic2 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
                                         <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Warm</h1>
-                                        {/* <MDBRow className='white-text text-center'>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="utensils" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>519,000</h1>
-                                                <p className='font-weight-bold'>Meals Served</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="clock" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>21,914</h1>
-                                                <p className='font-weight-bold'>Volunteer Hours</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="dollar-sign" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>557,273</h1>
-                                                <p className='font-weight-bold'>Dollars Saved</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="home" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>372</h1>
-                                                <p className='font-weight-bold'>Homes Repaired</p>
-                                            </MDBCol>
-                                        </MDBRow>
-                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption> */}
                                     </MDBContainer>
                                 </div>
                             </div>
-                            {/* </MDBStreak> */}
+                            
                         </div>
                         <div className='px-3'>
                             <MDBRow className='py-5'>
@@ -286,39 +239,16 @@ class Home extends React.Component {
                                 </MDBCol>
                             </MDBRow>
                         </div>
-                        {/* STREAK */}
+                        
                         <div>
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic3 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
                                         <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Approachable</h1>
-                                        {/* <MDBRow className='white-text text-center'>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="utensils" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>519,000</h1>
-                                                <p className='font-weight-bold'>Meals Served</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="clock" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>21,914</h1>
-                                                <p className='font-weight-bold'>Volunteer Hours</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="dollar-sign" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>557,273</h1>
-                                                <p className='font-weight-bold'>Dollars Saved</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="home" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>372</h1>
-                                                <p className='font-weight-bold'>Homes Repaired</p>
-                                            </MDBCol>
-                                        </MDBRow>
-                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption> */}
                                     </MDBContainer>
                                 </div>
                             </div>
-                            {/* </MDBStreak> */}
+                            
                         </div>
                         <div className='my-4'>
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic3 + ")" }}>
@@ -329,42 +259,19 @@ class Home extends React.Component {
                                             <h1 className='largeText display-3 text-center black-text my-3 text-uppercase' >Memorable</h1>
                                             <hr className='gold mx-5' />
                                             <h5 className='h5-responsive text-center text-uppercase p-4 black-text'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                        accusantium doloremque laudantium, totam rem aperiam, eaque
+                                            accusantium doloremque laudantium, totam rem aperiam, eaque
                                         ipsa.</h5>
                                         </div>
-                                        {/* <MDBRow className='white-text text-center'>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="utensils" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>519,000</h1>
-                                                <p className='font-weight-bold'>Meals Served</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="clock" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>21,914</h1>
-                                                <p className='font-weight-bold'>Volunteer Hours</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="dollar-sign" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>557,273</h1>
-                                                <p className='font-weight-bold'>Dollars Saved</p>
-                                            </MDBCol>
-                                            <MDBCol md='3' className='mb-2'>
-                                                <MDBIcon icon="home" size="2x" className="white-text" />
-                                                <h1 className='mx-2 font-weight-bold'>372</h1>
-                                                <p className='font-weight-bold'>Homes Repaired</p>
-                                            </MDBCol>
-                                        </MDBRow>
-                                        <figcaption className='figure-caption text-center white-text mb-2'>**2019 Results</figcaption> */}
                                     </MDBContainer>
                                 </div>
                             </div>
-                            {/* </MDBStreak> */}
+                            
                         </div>
 
                     </main>
                     <footer>
                         <FooterPage />
-                    </footer>
+                    </footer> */}
                 </div>
             </div>
         );
