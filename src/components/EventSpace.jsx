@@ -81,14 +81,14 @@ class EventSpace extends React.Component {
                                     {/* <h5 className='h5-responsive text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold'>
                                         Vibrant Spaces
                                     </h5> */}
-                                    <MDBBtn
+                                    {/* <MDBBtn
                                         className='gold2 black-text'
                                         size='lg'
                                         href='#'
                                         target='_blank'
                                     >
                                         Book Your Event!
-                                    </MDBBtn>
+                                    </MDBBtn> */}
                                 </MDBCol>
                             </MDBRow>
                         </MDBContainer>
@@ -146,7 +146,7 @@ class EventSpace extends React.Component {
                                             <strong>Patio</strong>
                                         </h3>
                                         <p>
-                                            The Patio boasts a variety of different features including a outdoor contemporary, bar, open kitchen, perfectly designed landscape lighting with exposed wood beams.  This space is ideal for an event reception.
+                                            The Patio boasts a variety of different features including an outdoor contemporary, bar, open kitchen, perfectly designed landscape lighting with exposed wood beams.  This space is ideal for an event reception.
                                         </p>
                                         <MDBBtn size="md" className="gold2 black-text waves-light ">
                                             Book Now

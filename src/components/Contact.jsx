@@ -78,15 +78,13 @@ class Contact extends Component {
 
                                 <section className="my-5">
                                     <h2 className="display-3 goldtext2 text-center pt-5 my-5">
-                                        Contact Us!
-                                </h2>
-                                    <p className="text-center w-responsive white-text mx-auto pb-5">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-                                        error amet numquam iure provident voluptate esse quasi, veritatis
-                                        totam voluptas nostrum quisquam eum porro a pariatur veniam.
-                                </p>
+                                        Get Connected
+                                    </h2>
 
                                     <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)' }}>
+                                        <p className="w-responsive white-text pb-5">
+                                            Event Profile
+                                    </p>
                                         <MDBCol md="9" className="md-0 mb-5 pt-3">
                                             <form onSubmit={this.submitForm}
                                                 action="https://formspree.io/f/moqpykoo"
@@ -122,7 +120,7 @@ class Contact extends Component {
                                                             <MDBInput
                                                                 type="text"
                                                                 id="event-name"
-                                                                label="Name of Event"
+                                                                label="Name Your Event"
                                                                 className='white-text'
                                                                 name='Name of Event'
                                                             />

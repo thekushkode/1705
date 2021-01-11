@@ -33,7 +33,7 @@ class EmailThankYou extends Component {
                                 <MDBCol md='12' className='text-center m-5' style={{ backgroundColor: 'rgba(0, 0, 0, .5)' }}>
                                     {/* <img src={front} alt='MOWA logo' className='w-50 mx-auto' /> */}
                                     <h1 className='display-1 text-center white-text my-4'>Thank You!</h1>
-                                    <h2 className='text-center white-text my-4'>Your submission has been sent. We Will Be In Touch Shortly!</h2>
+                                    <h2 className='text-center white-text my-4'>Your submission has been sent. We Will Be In Touch Shortly.</h2>
                                 </MDBCol>
                             </MDBRow>
                         </div>

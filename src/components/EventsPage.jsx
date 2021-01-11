@@ -112,7 +112,7 @@ class EventsPage extends Component {
                                 Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
                                 <MDBBtn
-                                    className='gold2 black-text'
+                                    className='gold black-text'
                                     size='lg'
                                     href='#'
                                     target='_blank'
@@ -128,7 +128,7 @@ class EventsPage extends Component {
                                     <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + studio + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
                                             <MDBContainer>
-                                                <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Corporate</h1>
+                                                <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Corporate Gatherings</h1>
                                             </MDBContainer>
                                         </div>
                                     </div>
@@ -156,7 +156,7 @@ class EventsPage extends Component {
                                     <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + entrance + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
                                             <MDBContainer>
-                                                <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Mitzvahs</h1>
+                                                <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Mitzvahs & More</h1>
                                             </MDBContainer>
                                         </div>
                                     </div>
@@ -177,9 +177,8 @@ class EventsPage extends Component {
                                     </MDBBtn>
                             </MDBCol>
                         </MDBRow>
-                        <MDBRow className='mt-3 px-3'>
+                        {/* <MDBRow className='mt-3 px-3'>
                             <MDBCol md='6'>
-                                {/* STREAK was streak-long-2*/}
                                 <div>
                                     <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + studio + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
@@ -204,7 +203,7 @@ class EventsPage extends Component {
                                     Get Started!
                                     </MDBBtn>
                             </MDBCol>
-                        </MDBRow>
+                        </MDBRow> */}
                     </section>
                     <hr/>
                     <section className='mt-5'>
