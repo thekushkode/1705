@@ -84,7 +84,7 @@ class Contact extends Component {
                                     <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)' }}>
                                         <p className="w-responsive white-text pb-5">
                                             Event Profile
-                                    </p>
+                                        </p>
                                         <MDBCol md="9" className="md-0 mb-5 pt-3">
                                             <form onSubmit={this.submitForm}
                                                 action="https://formspree.io/f/moqpykoo"
