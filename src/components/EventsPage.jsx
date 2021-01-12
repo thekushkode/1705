@@ -13,6 +13,10 @@ import Nav from "./Nav";
 
 class EventsPage extends Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
 
         return (
@@ -25,8 +29,8 @@ class EventsPage extends Component {
                     <MDBCarousel
                         activeItem={1}
                         length={3}
-                        showControls={false}
-                        showIndicators={true}
+                        showControls={true}
+                        showIndicators={false}
                         className="z-depth-1"
                     >
                         <MDBCarouselInner>
@@ -41,10 +45,9 @@ class EventsPage extends Component {
                                     />
                                     {/* <MDBMask overlay="black-light" /> */}
                                 </MDBView>
-                                <MDBCarouselCaption style={{ top: '200px' }}>
-                                    <h1 className="display-1 text-uppercase black-text largeText">Sophisticated</h1>
+                                <MDBCarouselCaption className='topPlacement mediaPlacement'>
+                                    <h1 className="display-1 text-uppercase black-text slideOneText">Sophisticated</h1>
                                     <hr className='hr-dark my-4' />
-                                    <p className='black-text'>First text or button</p>
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
                             <MDBCarouselItem itemId="2">
@@ -52,16 +55,16 @@ class EventsPage extends Component {
                                     <img
                                         className="d-block w-100"
                                         src={abaca}
-                                        alt="First slide"
+                                        alt="2nd Slide"
                                         style={{ maxHeight: '100vh' }}
                                         fixed
                                     />
                                     {/* <MDBMask overlay="black-light" /> */}
                                 </MDBView>
-                                <MDBCarouselCaption style={{ top: '200px' }}>
-                                    <h1 className="display-1 text-uppercase">Warm</h1>
+                                <MDBCarouselCaption className='topPlacement mediaPlacement'>
+                                    <h1 className="display-1 text-uppercase slideTwoText">Warm</h1>
                                     <hr className='hr-light my-4' />
-                                    <p>First text or button</p>
+                                    {/* <p>First text or button</p> */}
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
                             <MDBCarouselItem itemId="3">
@@ -75,10 +78,10 @@ class EventsPage extends Component {
                                     />
                                     {/* <MDBMask overlay="black-light" /> */}
                                 </MDBView>
-                                <MDBCarouselCaption style={{ top: '200px' }}>
-                                    <h1 className="display-1 text-uppercase">Approachable</h1>
+                                <MDBCarouselCaption className='topPlacement mediaPlacement'>
+                                    <h1 className="display-1 text-uppercase slideThreeText">Approachable</h1>
                                     <hr className='hr-light my-4' />
-                                    <p>First text or button</p>
+                                    {/* <p>First text or button</p> */}
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
                         </MDBCarouselInner>
@@ -135,10 +138,7 @@ class EventsPage extends Component {
                                 </div>
                             </MDBCol>
                             <MDBCol md='6'>
-                                <p className='pt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+                                <p className='pt-3'>Achieve your meeting goals and strive for corporate success by planning your next event at Seventeen05. With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings. Share your event vision to us and we will bring your day to life with upscale service, bespoke floor plans and AV needs. Featuring fully-adaptable, cutting-edge telecommunications and multimedia technology as well as high-speed Wi-Fi Internet to maximize productivity and encourage collaboration.</p>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow className='mt-3 px-3'>

@@ -20,6 +20,7 @@ import studio from '../assets/space-photos/studio-experience.png';
 import courtyard from '../assets/space-photos/courtyard.png';
 import gallery from '../assets/space-photos/inside1.png';
 import FooterPage from './Footer';
+import CapacityChart from './CapacityModal';
 
 class EventSpace extends React.Component {
     // state = {
@@ -78,18 +79,7 @@ class EventSpace extends React.Component {
                                     <h1 className='largeText display-3 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
                                         The Experience
                                     </h1>
-                                    <hr className='hr-light my-4' />
-                                    {/* <h5 className='h5-responsive text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold'>
-                                        Vibrant Spaces
-                                    </h5> */}
-                                    {/* <MDBBtn
-                                        className='gold2 black-text'
-                                        size='lg'
-                                        href='#'
-                                        target='_blank'
-                                    >
-                                        Book Your Event!
-                                    </MDBBtn> */}
+                                    {/* <hr className='hr-light my-4' /> */}
                                 </MDBCol>
                             </MDBRow>
                         </MDBContainer>
@@ -105,7 +95,7 @@ class EventSpace extends React.Component {
                                     Spacious event options featuring a welcoming background of contemporary art and design, unparalleled style for any gathering.
                                     People, passions and plans come alive in our new state-of-the-art Atlanta event venue. Whether you are coming together for a purposeful meeting, team-building events, planning your next Gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying your surroundings.
                                 </p>
-                                <div className='mb-4' >
+                                <div className='p-2'>
                                     <div className='streak streak-photo streak-long-1'>
                                         <div className='mask flex-center'>
                                             <MDBContainer>
@@ -117,6 +107,16 @@ class EventSpace extends React.Component {
                                                     <MDBCol md='4' className='mb-2'>
                                                         <h1 className='mx-2 font-weight-bold'>11,880 sq ft</h1>
                                                         <p className='font-weight-bold'>Total Event Space</p>
+                                                        {/* <div className='text-center mt-3'>
+                                                            <MDBBtn
+                                                                className='gold black-text'
+                                                                size='lg'
+                                                                href='#'
+                                                                target='_blank'
+                                                            >
+                                                                Get Started!
+                                    </MDBBtn>
+                                                        </div> */}
                                                     </MDBCol>
                                                     <MDBCol md='4' className='mb-2'>
                                                         <h1 className='mx-2 font-weight-bold'>200</h1>
@@ -128,6 +128,16 @@ class EventSpace extends React.Component {
                                         </div>
                                     </div>
                                     {/* </MDBStreak> */}
+                                </div>
+                                <div className='text-center pb-5'>
+                                    <MDBBtn
+                                        className='gold black-text'
+                                        size='lg'
+                                        href='#'
+                                        target='_blank'
+                                    >
+                                        Get Started
+                                    </MDBBtn>
                                 </div>
                                 <MDBRow>
                                     <MDBCol lg="7">
@@ -149,9 +159,9 @@ class EventSpace extends React.Component {
                                         <p>
                                             The Patio boasts a variety of different features including an outdoor contemporary, bar, open kitchen, perfectly designed landscape lighting with exposed wood beams.  This space is ideal for an event reception.
                                         </p>
-                                        <MDBBtn size="md" className="gold2 black-text waves-light ">
+                                        {/* <MDBBtn size="md" className="gold black-text waves-light ">
                                             Book Now
-                                        </MDBBtn>
+                                        </MDBBtn> */}
                                     </MDBCol>
                                 </MDBRow>
                                 <hr className="my-5" />
@@ -163,12 +173,6 @@ class EventSpace extends React.Component {
                                         <p>
                                             An outdoor intimate event space which can accommodate social gatherings such as rehearsal dinners or wedding ceremonies as well as a great corporate cocktail reception.  It can accommodate gatherings up to 100 guests.
                                         </p>
-                                        <MDBBtn
-                                            size="md"
-                                            className="mb-lg-0 gold2 black-text mb-4 waves-light"
-                                        >
-                                            Book Now
-                                        </MDBBtn>
                                     </MDBCol>
                                     <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
@@ -204,9 +208,6 @@ class EventSpace extends React.Component {
                                         <p>
                                             The Experience Studio is a state of the art demo kitchen that features views to the Patio and Courtyard.  It is a great location for cooking demonstrations or lunches or dinners of social or corporate nature for approximately 30 guests
                                         </p>
-                                        <MDBBtn size="md" className="gold2 black-text waves-light ">
-                                            Book Now
-                                        </MDBBtn>
                                     </MDBCol>
                                 </MDBRow>
                                 <hr className="my-5" />
@@ -216,16 +217,10 @@ class EventSpace extends React.Component {
                                             <strong>1705 Event Gallery</strong>
                                         </h3>
                                         <p>
-                                            Seventeen05 is our main event gallery with 3917 sq ft. It features abundant natural light and loft like exposed ceilings conducive to an open, airy feeling, which allow for creative decorative and lighting possibilities. Glass walls unveil the perfect view to The Courtyard. Seventeen05 can be divided into 2 equal event spaces or be enjoyed as 1.<br/><br/>
+                                            Seventeen05 is our main event gallery with 3917 sq ft. It features abundant natural light and loft like exposed ceilings conducive to an open, airy feeling, which allow for creative decorative and lighting possibilities. Glass walls unveil the perfect view to The Courtyard. Seventeen05 can be divided into 2 equal event spaces or be enjoyed as 1.<br /><br />
                                             It can accommodate approximately up to 250 reception style and 200 is banquet seating. It is adjacent to our prefuntion perfect for welcoming your guests prior to entering Seventeen05.
 
                                         </p>
-                                        <MDBBtn
-                                            size="md"
-                                            className="mb-lg-0 gold2 black-text mb-4 waves-light"
-                                        >
-                                            Book Now
-                                        </MDBBtn>
                                     </MDBCol>
                                     <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
@@ -240,6 +235,20 @@ class EventSpace extends React.Component {
                                         </MDBView>
                                     </MDBCol>
                                 </MDBRow>
+                                <div className="pt-5 d-flex justify-content-center">
+                                    <MDBBtn
+                                        className='blackgrnd black-text goldtext'
+                                        size='lg'
+                                        href='#'
+                                        target='_blank'
+                                    >
+                                        Get Started
+                                    </MDBBtn>
+                                    <div>
+
+                                        <CapacityChart />
+                                    </div>
+                                </div>
                             </MDBCardBody>
                         </MDBCard>
                     </main>
