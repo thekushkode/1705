@@ -18,6 +18,7 @@ import bkgrd from '../assets/space-photos/entrance.png';
 import patio from '../assets/space-photos/patio.png';
 import studio from '../assets/space-photos/studio-experience.png';
 import courtyard from '../assets/space-photos/courtyard.png';
+import gallery from '../assets/space-photos/inside1.png';
 import FooterPage from './Footer';
 
 class EventSpace extends React.Component {
@@ -206,6 +207,37 @@ class EventSpace extends React.Component {
                                         <MDBBtn size="md" className="gold2 black-text waves-light ">
                                             Book Now
                                         </MDBBtn>
+                                    </MDBCol>
+                                </MDBRow>
+                                <hr className="my-5" />
+                                <MDBRow>
+                                    <MDBCol lg="5">
+                                        <h3 className="font-weight-bold mb-3 p-0">
+                                            <strong>1705 Event Gallery</strong>
+                                        </h3>
+                                        <p>
+                                            Seventeen05 is our main event gallery with 3917 sq ft. It features abundant natural light and loft like exposed ceilings conducive to an open, airy feeling, which allow for creative decorative and lighting possibilities. Glass walls unveil the perfect view to The Courtyard. Seventeen05 can be divided into 2 equal event spaces or be enjoyed as 1.<br/><br/>
+                                            It can accommodate approximately up to 250 reception style and 200 is banquet seating. It is adjacent to our prefuntion perfect for welcoming your guests prior to entering Seventeen05.
+
+                                        </p>
+                                        <MDBBtn
+                                            size="md"
+                                            className="mb-lg-0 gold2 black-text mb-4 waves-light"
+                                        >
+                                            Book Now
+                                        </MDBBtn>
+                                    </MDBCol>
+                                    <MDBCol lg="7">
+                                        <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
+                                            <img
+                                                className="img-fluid"
+                                                src={gallery}
+                                                alt=""
+                                            />
+                                            <a href="#!">
+                                                <MDBMask overlay="white-slight" />
+                                            </a>
+                                        </MDBView>
                                     </MDBCol>
                                 </MDBRow>
                             </MDBCardBody>

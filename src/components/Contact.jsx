@@ -27,6 +27,8 @@ class Contact extends Component {
         this.state = {
             status: "",
             eventType: [],
+            eventSpace: [],
+            flexDate: [],
         };
     }
 
@@ -37,6 +39,18 @@ class Contact extends Component {
     handleeventType = (e) => {
         this.setState({
             eventType: e[0]
+        })
+    }
+
+    handleeventSpace = (e) => {
+        this.setState({
+            eventSpace: e[0]
+        })
+    }
+
+    handleflexDate = (e) => {
+        this.setState({
+            flexDate: e[0]
         })
     }
 
@@ -82,9 +96,9 @@ class Contact extends Component {
                                     </h2>
 
                                     <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)' }}>
-                                        <p className="w-responsive white-text pb-5">
+                                        <h1 className="w-responsive white-text pt-3">
                                             Event Profile
-                                        </p>
+                                        </h1>
                                         <MDBCol md="9" className="md-0 mb-5 pt-3">
                                             <form onSubmit={this.submitForm}
                                                 action="https://formspree.io/f/moqpykoo"
@@ -93,7 +107,7 @@ class Contact extends Component {
                                                     <MDBCol md="6">
                                                         <div className="md-form mb-0">
                                                             <MDBInput type="text" id="contact-name" label="Your Name"
-                                                                className='white-text' name='Name' />
+                                                                className='white-text' name='Name' required />
                                                         </div>
                                                     </MDBCol>
                                                     <MDBCol md="6">
@@ -104,6 +118,7 @@ class Contact extends Component {
                                                                 label="Your Email"
                                                                 className='white-text'
                                                                 name='Email'
+                                                                required
                                                             />
                                                         </div>
                                                     </MDBCol>
@@ -112,7 +127,7 @@ class Contact extends Component {
                                                     <MDBCol md="6">
                                                         <div className="md-form mb-0">
                                                             <MDBInput type="text" id="contact-phone" label="Your Phone"
-                                                                className='white-text' name='Phone' />
+                                                                className='white-text' name='Phone' required />
                                                         </div>
                                                     </MDBCol>
                                                     <MDBCol md="6">
@@ -135,6 +150,19 @@ class Contact extends Component {
                                                         </div>
                                                     </MDBCol>
                                                     <MDBCol md="4">
+                                                        <div>
+                                                            <MDBInput name='Date Flexible' value={this.state.flexDate} hidden></MDBInput>
+                                                            <MDBSelect getValue={(e) => this.handleflexDate(e)}
+                                                                label='Is Date Flexible?'>
+                                                                <MDBSelectInput id='volunteer' name='Date Flexible:' className='white-text' />
+                                                                <MDBSelectOptions>
+                                                                    <MDBSelectOption value="Yes" name="Yes">Yes</MDBSelectOption>
+                                                                    <MDBSelectOption value="No" name="No">No</MDBSelectOption>
+                                                                </MDBSelectOptions>
+                                                            </MDBSelect>
+                                                        </div>
+                                                    </MDBCol>
+                                                    <MDBCol md="4">
                                                         <div className="md-form mb-0">
                                                             <MDBInput
                                                                 type="text"
@@ -145,7 +173,9 @@ class Contact extends Component {
                                                             />
                                                         </div>
                                                     </MDBCol>
-                                                    <MDBCol md="4">
+                                                </MDBRow>
+                                                <MDBRow>
+                                                    <MDBCol md="6">
                                                         <div>
                                                             <MDBInput name='Event Type' value={this.state.eventType} hidden></MDBInput>
                                                             <MDBSelect getValue={(e) => this.handleeventType(e)}
@@ -161,7 +191,23 @@ class Contact extends Component {
                                                             </MDBSelect>
                                                         </div>
                                                     </MDBCol>
+                                                    <MDBCol md="6">
+                                                        <div>
+                                                            <MDBInput name='Event Space' value={this.state.eventSpace} hidden></MDBInput>
+                                                            <MDBSelect getValue={(e) => this.handleeventSpace(e)}
+                                                                label='Event Space:'>
+                                                                <MDBSelectInput id='volunteer' name='Event Space:' className='white-text' />
+                                                                <MDBSelectOptions>
+                                                                    <MDBSelectOption value="Patio" name="Patio">Patio</MDBSelectOption>
+                                                                    <MDBSelectOption value="Courtyard" name="Courtyard">Courtyard</MDBSelectOption>
+                                                                    <MDBSelectOption value="Studio Experience" name="Studio Experience">Studio Experience</MDBSelectOption>
+                                                                    <MDBSelectOption value="1705 Venue Buyout" name="1705 Venue Buyout">1705 Venue Buyout</MDBSelectOption>
+                                                                </MDBSelectOptions>
+                                                            </MDBSelect>
+                                                        </div>
+                                                    </MDBCol>
                                                 </MDBRow>
+                                                
                                                 <MDBRow>
                                                     <MDBCol md="12">
                                                         <div className="md-form mb-0">
@@ -200,6 +246,7 @@ class Contact extends Component {
                                                 </li>
                                             </ul>
                                         </MDBCol>
+                                        <p className='white-text text-justify px-2'>AT Seventeen05, WE'RE COMMITTED TO DELIVERING MEANINGFUL, MEMORABLE EXPERIENCES TO OUR GUESTS THROUGH CONNECTED SERVICE. WE CAN MAKE THIS HAPPEN AS WE FEEL SAFE AND CONFIDENT IN OUR SPACES. WE WILL OPERATE BEYOND CDC AND STATE-MANDATED HEALTH AND SAFETY GUIDELINES IN ORDER TO DO OUR PART IN KEEPING YOU AND OUR CITY SAFE.</p>
                                     </MDBRow>
                                 </section>
                             </MDBContainer>

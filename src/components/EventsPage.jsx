@@ -86,10 +86,18 @@ class EventsPage extends Component {
                     <section className="text-center my-5">
                         <h2 className="h1-responsive my-5">
                             Revel & Relish in Life's Milestones!
-                            </h2>
+                        </h2>
                         <p className="lead grey-text w-responsive mx-auto mb-5">
                             Situated in the heart of West Midtown, we offer an unforgettable setting for a wedding, rehearsal dinner or other special event in Atlanta.
-                            </p>
+                        </p>
+                        <MDBBtn
+                            className='gold black-text'
+                            size='lg'
+                            href='#'
+                            target='_blank'
+                        >
+                            Get Started!
+                        </MDBBtn>
 
                     </section>
                     <section>
@@ -100,7 +108,7 @@ class EventsPage extends Component {
                                     <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + inside + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
                                             <MDBContainer>
-                                                <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Weddings</h1>
+                                                <h1 className='largeText display-3 text-center white-text my-3 text-uppercase'>Weddings</h1>
                                             </MDBContainer>
                                         </div>
                                     </div>
@@ -111,14 +119,6 @@ class EventsPage extends Component {
                                 Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
-                                <MDBBtn
-                                    className='gold black-text'
-                                    size='lg'
-                                    href='#'
-                                    target='_blank'
-                                >
-                                    Get Started!
-                                    </MDBBtn>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow className='mt-3 px-3'>
@@ -128,7 +128,7 @@ class EventsPage extends Component {
                                     <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + studio + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
                                             <MDBContainer>
-                                                <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Corporate Gatherings</h1>
+                                                <h1 className='largeText display-3 text-center white-text my-3 text-uppercase'>Corporate Gatherings</h1>
                                             </MDBContainer>
                                         </div>
                                     </div>
@@ -139,14 +139,6 @@ class EventsPage extends Component {
                                 Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
-                                <MDBBtn
-                                    className='gold2 black-text'
-                                    size='lg'
-                                    href='#'
-                                    target='_blank'
-                                >
-                                    Get Started!
-                                    </MDBBtn>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow className='mt-3 px-3'>
@@ -156,7 +148,7 @@ class EventsPage extends Component {
                                     <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + entrance + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
                                             <MDBContainer>
-                                                <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Mitzvahs & More</h1>
+                                                <h1 className='largeText display-3 text-center white-text my-3 text-uppercase'>Mitzvahs & More</h1>
                                             </MDBContainer>
                                         </div>
                                     </div>
@@ -167,69 +159,6 @@ class EventsPage extends Component {
                                 Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
-                                <MDBBtn
-                                    className='gold2 black-text'
-                                    size='lg'
-                                    href='#'
-                                    target='_blank'
-                                >
-                                    Get Started!
-                                    </MDBBtn>
-                            </MDBCol>
-                        </MDBRow>
-                        {/* <MDBRow className='mt-3 px-3'>
-                            <MDBCol md='6'>
-                                <div>
-                                    <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + studio + ")" }}>
-                                        <div className='mask flex-center rgba-black-strong'>
-                                            <MDBContainer>
-                                                <h1 className='largeText display-1 text-center white-text my-3 text-uppercase'>Other Events</h1>
-                                            </MDBContainer>
-                                        </div>
-                                    </div>
-                                </div>
-                            </MDBCol>
-                            <MDBCol md='6'>
-                                <p className='pt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
-                                <MDBBtn
-                                    className='gold2 black-text'
-                                    size='lg'
-                                    href='#'
-                                    target='_blank'
-                                >
-                                    Get Started!
-                                    </MDBBtn>
-                            </MDBCol>
-                        </MDBRow> */}
-                    </section>
-                    <hr/>
-                    <section className='mt-5'>
-                        <MDBRow className='px-2' >
-                            <MDBCol md="4">
-                                <img src={inside} alt='' className='d-block img-fluid' />
-                                <h5 className="font-weight-bold my-4">Weddings</h5>
-                                <p className="grey-text mb-md-0 mb-5">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                                    </p>
-                            </MDBCol>
-                            <MDBCol md="4">
-                                <img src={studio} alt='' className='d-block img-fluid' />
-                                <h5 className="font-weight-bold my-4">Corporate Gatherings</h5>
-                                <p className="grey-text mb-md-0 mb-5">
-                                    Achieve your meeting goals and strive for corporate success by planning your next event at Seventeen05. With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings. Share your event vision to us and we will bring your day to life with upscale service, bespoke floor plans and AV needs. Featuring fully-adaptable, cutting-edge telecommunications and multimedia technology as well as high-speed Wi-Fi Internet to maximize productivity and encourage collaboration.
-                                    </p>
-                            </MDBCol>
-                            <MDBCol md="4">
-                                <img src={entrance} alt='' className='d-block img-fluid' />
-                                <h5 className="font-weight-bold my-4">Mitzvahs & More</h5>
-                                <p className="grey-text mb-md-0 mb-5">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                                    </p>
                             </MDBCol>
                         </MDBRow>
                     </section>
