@@ -52,6 +52,12 @@ body {
     }
 }
 
+@media (max-width: 767.98px) {
+    .smallMediaText {
+        font-size: 20px !important;
+    }
+}
+
 .topPlacement {
     top: 200px;
 }

@@ -36,6 +36,11 @@ class Home extends React.Component {
     // componentWillUnmount() {
     //     document.querySelector('nav').style.height = 'auto';
     // }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         // const navStyle = { marginTop: '0rem' };
         // const overlay = (
@@ -87,49 +92,33 @@ class Home extends React.Component {
                             </MDBRow>
                         </MDBContainer>
                     </MDBView>
-                    {/* <main>
+                    <main>
                         <div className='px-3'>
-                            <h1 className='h1-responsive text-center text-uppercase py-5'>Lorem Ipsum</h1>
+                            <h1 className='h1-responsive text-center text-uppercase py-5'>Elegant Spaces For All Events</h1>
                             <MDBRow className='pb-5'>
-                                <MDBCol md='5'>
+                                <MDBCol md='7'>
                                     <img src={space1} alt='space image1' className='img-fluid' />
                                 </MDBCol>
-                                <MDBCol md='7' className='text-center'>
+                                <MDBCol md='5' className='text-center'>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                        irure dolor in reprehenderit in voluptate velit esse cillum
-                                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt
-                                        mollit anim id est laborum.
-                                    </p>
-                                    <p>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                        accusantium doloremque laudantium, totam rem aperiam, eaque
-                                        ipsa quae ab illo inventore veritatis et quasi architecto
-                                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                                        quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                        consequuntur magni dolores eos qui ratione voluptatem sequi
-                                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                                        dolor sit amet, consectetur, adipisci velit, sed quia non
-                                        numquam eius modi tempora incidunt ut labore et dolore magnam
-                                        aliquam quaerat voluptatem.
+                                        A new state-of the art Event Venue located in the city’s emerging Westside neighbourhood, just moments from midtown and downtown.
+                                        Where graceful hospitality meets contemporary surroundings.
+                                        Be in the best place, where people, passions and plans come alive.
+                                        Whether you are coming together for a purposeful meeting, team-building event, planning your next gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying every event.
                                     </p>
                                     <MDBBtn
-                                        className='gold2 black-text'
+                                        className='gold black-text'
                                         size='lg'
                                         href='#'
                                         target='_blank'
                                     >
-                                        Call To Action!
+                                        See Our Spaces
                                     </MDBBtn>
                                 </MDBCol>
                             </MDBRow>
                         </div>
-                        
-                        <div>
+
+                        {/* <div>
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic1 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
@@ -266,12 +255,12 @@ class Home extends React.Component {
                                 </div>
                             </div>
                             
-                        </div>
+                        </div> */}
 
                     </main>
                     <footer>
                         <FooterPage />
-                    </footer> */}
+                    </footer>
                 </div>
             </div>
         );

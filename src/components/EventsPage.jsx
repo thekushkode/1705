@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer, MDBRow, MDBCol, MDBBtn } from
     "mdbreact";
 import './1705Colors.css';
-import marble from '../assets/slides/marble.jpg';
-import steel from '../assets/slides/blacksteel.jpg';
-import abaca from '../assets/slides/Abaca.jpg';
+import wedd from '../assets/slides/wedd.jpg';
+import wine from '../assets/slides/wine.jpg';
+import dance from '../assets/slides/dancers.jpg';
 import inside from '../assets/space-photos/inside1.png';
 import studio from '../assets/space-photos/studio-experience.png';
 import entrance from '../assets/space-photos/entrance.png';
@@ -29,6 +29,7 @@ class EventsPage extends Component {
                     <MDBCarousel
                         activeItem={1}
                         length={3}
+                        slide={true}
                         showControls={true}
                         showIndicators={false}
                         className="z-depth-1"
@@ -38,28 +39,28 @@ class EventsPage extends Component {
                                 <MDBView>
                                     <img
                                         className="d-block w-100"
-                                        src={marble}
+                                        src={wine}
                                         alt="First slide"
                                         style={{ maxHeight: '100vh' }}
                                         fixed
                                     />
-                                    {/* <MDBMask overlay="black-light" /> */}
+                                    <MDBMask overlay="black-light" />
                                 </MDBView>
                                 <MDBCarouselCaption className='topPlacement mediaPlacement'>
-                                    <h1 className="display-1 text-uppercase black-text slideOneText">Sophisticated</h1>
-                                    <hr className='hr-dark my-4' />
+                                    <h1 className="display-1 text-uppercase white-text slideOneText">Sophisticated</h1>
+                                    <hr className='hr-light my-4' />
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
                             <MDBCarouselItem itemId="2">
                                 <MDBView>
                                     <img
                                         className="d-block w-100"
-                                        src={abaca}
+                                        src={wedd}
                                         alt="2nd Slide"
                                         style={{ maxHeight: '100vh' }}
                                         fixed
                                     />
-                                    {/* <MDBMask overlay="black-light" /> */}
+                                    <MDBMask overlay="black-light" />
                                 </MDBView>
                                 <MDBCarouselCaption className='topPlacement mediaPlacement'>
                                     <h1 className="display-1 text-uppercase slideTwoText">Warm</h1>
@@ -71,12 +72,12 @@ class EventsPage extends Component {
                                 <MDBView>
                                     <img
                                         className="d-block w-100"
-                                        src={steel}
+                                        src={dance}
                                         alt="First slide"
                                         style={{ maxHeight: '100vh' }}
                                         fixed
                                     />
-                                    {/* <MDBMask overlay="black-light" /> */}
+                                    <MDBMask overlay="black-light" />
                                 </MDBView>
                                 <MDBCarouselCaption className='topPlacement mediaPlacement'>
                                     <h1 className="display-1 text-uppercase slideThreeText">Approachable</h1>
@@ -88,10 +89,10 @@ class EventsPage extends Component {
                     </MDBCarousel>
                     <section className="text-center my-5">
                         <h2 className="h1-responsive my-5">
-                            Revel & Relish in Life's Milestones!
+                            Revel & Relish in Life's Milestones at Seventeen05!
                         </h2>
                         <p className="lead grey-text w-responsive mx-auto mb-5">
-                            Situated in the heart of West Midtown, we offer an unforgettable setting for a wedding, rehearsal dinner or other special event in Atlanta.
+                            Whether you are planning a Micro celebration for two virtually watched by your friends and family or a large-scale wedding, Seventeen05 will curate your experience and elevate your vision to your liking.
                         </p>
                         <MDBBtn
                             className='gold black-text'
@@ -118,17 +119,16 @@ class EventsPage extends Component {
                                 </div>
                             </MDBCol>
                             <MDBCol md='6'>
-                                <p className='pt-3' >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+                                <h1 className='h1-responsive text-center text-uppercase mt-3' >Fall In Love With Seventeen05</h1>
+                                <hr className='mx-5' />
+                                <p className='pt-3' >Revel and relish in life's milestones at Seventeen05. Whether you are planning a Micro celebration for two virtually watched by your friends and family or a large-scale wedding, Seventeen05 will curate your experience and elevate your vision to your liking.</p>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow className='mt-3 px-3'>
                             <MDBCol md='6'>
                                 {/* STREAK was streak-long-2*/}
                                 <div>
-                                    <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + studio + ")" }}>
+                                    <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + studio + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
                                             <MDBContainer>
                                                 <h1 className='largeText display-3 text-center white-text my-3 text-uppercase'>Corporate Gatherings</h1>
@@ -138,7 +138,9 @@ class EventsPage extends Component {
                                 </div>
                             </MDBCol>
                             <MDBCol md='6'>
-                                <p className='pt-3'>Achieve your meeting goals and strive for corporate success by planning your next event at Seventeen05. With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings. Share your event vision to us and we will bring your day to life with upscale service, bespoke floor plans and AV needs. Featuring fully-adaptable, cutting-edge telecommunications and multimedia technology as well as high-speed Wi-Fi Internet to maximize productivity and encourage collaboration.</p>
+                                <h1 className='h1-responsive text-center text-uppercase mt-3' >Meetings That Matter</h1>
+                                <hr className='mx-5' />
+                                <p className='pt-3' >Achieve your meeting goals and strive for corporate success by planning your next event at Seventeen05. Share your concept event with us and we will bring your gathering to life with upscale service, bespoke floor plans and AV needs. Featuring fully-adaptable, cutting-edge telecommunications and multimedia technology as well as high-speed Wi-Fi Internet to maximize productivity and encourage collaboration.</p>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow className='mt-3 px-3'>
@@ -155,15 +157,28 @@ class EventsPage extends Component {
                                 </div>
                             </MDBCol>
                             <MDBCol md='6'>
-                                <p className='pt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Reprehenderit maiores aperiam minima assumenda deleniti hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+                                <h1 className='h1-responsive text-center text-uppercase mt-3' >Be In The Best Place</h1>
+                                <hr className='mx-5' />
+                                <p className='pt-3' >Celebrate coming of age at Seventeen05, our event gallery can accommodate parties of 200 guests, additional outdoor space available. We offer unforgettable settings for Gala’s, rehearsal dinners and more. Our dedicated team of experienced and detail–oriented professionals will work with you to perfect your event for your guests.</p>
                             </MDBCol>
                         </MDBRow>
                     </section>
+                    <section className='mt-5'>
+                        <div>
+                            <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + wine + ")" }}>
+                                <div className='mask flex-center rgba-black-strong'>
+                                    <MDBContainer>
+                                        <h1 className='smallMediaText h1-responsive text-left goldtext'>As an event venue, Seventeen05 partners with professional food, beverage, design and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h1>
+                                        <div className='d-flex justify-content-center' >
+                                            <MDBBtn className='black-text gold' size='sm' >Get Connected</MDBBtn>
+                                        </div>
+                                    </MDBContainer>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </main>
-                <footer>
+                <footer style={{ marginTop: '-25px' }}>
                     <FooterPage />
                 </footer>
             </div>

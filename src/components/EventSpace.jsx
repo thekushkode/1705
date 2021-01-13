@@ -92,8 +92,8 @@ class EventSpace extends React.Component {
                                 </h2>
                                 <p className="text-center w-responsive mx-auto mb-3">
                                     The experience at Seventeen05 has been designed as a dynamic interplay between spaces crafted to maximize your vision of an event.
-                                    Spacious event options featuring a welcoming background of contemporary art and design, unparalleled style for any gathering.
-                                    People, passions and plans come alive in our new state-of-the-art Atlanta event venue. Whether you are coming together for a purposeful meeting, team-building events, planning your next Gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying your surroundings.
+                                    Inspiring event settings featuring a welcoming background of contemporary, contextual design, unparalleled style for any gathering.
+                                    With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings.
                                 </p>
                                 <div className='p-2'>
                                     <div className='streak streak-photo streak-long-1'>
