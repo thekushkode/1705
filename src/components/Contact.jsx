@@ -90,10 +90,10 @@ class Contact extends Component {
                         <div className="rgba-black-strong pb-5 px-2 text-center">
                             <MDBContainer>
 
-                                <section className="my-5">
-                                    <h2 className="display-3 goldtext2 experienceText text-center text-uppercase pt-5 my-5">
+                                <section className="my-5" >
+                                    {/* <h2 className="display-3 goldtext2 experienceText text-center text-uppercase pt-5 my-5">
                                         Get Connected
-                                    </h2>
+                                    </h2> */}
 
                                     <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)' }}>
                                         <h1 className="w-responsive white-text pt-3">

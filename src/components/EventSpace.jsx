@@ -9,7 +9,7 @@ import {
     MDBContainer,
     MDBCard,
     MDBCardBody,
-    MDBIcon
+    MDBIcon, MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem
 } from 'mdbreact';
 import './1705Colors.css';
 import Nav from './Nav';
@@ -86,16 +86,7 @@ class EventSpace extends React.Component {
                                         Inspiring event settings featuring a welcoming background of contemporary, contextual design, unparalleled style for any gathering.
                                         With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings.
                                     </h4>
-                                    <div className='text-center pt-2'>
-                                        <Link to='/contact' >
-                                            <MDBBtn
-                                                className='gold black-text'
-                                                size='lg'
-                                            >
-                                                Get Started
-                                        </MDBBtn>
-                                        </Link>
-                                    </div>
+
                                 </MDBCol>
                             </MDBRow>
                         </MDBContainer>
@@ -103,25 +94,32 @@ class EventSpace extends React.Component {
                     <main>
                         <MDBCard className="px-5 pb-5">
                             <MDBCardBody>
-                                {/* <h2 className="display-5 text-center py-3">
-                                    Vibrant Spaces
-                                </h2> */}
                                 {/* <p className="text-center w-responsive mx-auto mb-3">
                                     The experience at Seventeen05 has been designed as a dynamic interplay between spaces crafted to maximize your vision of an event.
                                     Inspiring event settings featuring a welcoming background of contemporary, contextual design, unparalleled style for any gathering.
                                     With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings.
                                 </p> */}
-                                <div className='px-2'>
-                                    <div className='streak streak-photo streak-long-2'>
+                                {/* <div className='text-center pt-2'>
+                                    <Link to='/contact' >
+                                        <MDBBtn
+                                            className='gold black-text'
+                                            size='lg'
+                                        >
+                                            Get Started
+                                        </MDBBtn>
+                                    </Link>
+                                </div> */}
+                                <div className=''>
+                                    <div className='streak streak-photo streak-long-1' >
                                         <div className='mask flex-center'>
                                             <MDBContainer>
                                                 <MDBRow className='black-text text-center'>
                                                     <MDBCol md='4' className='mb-2'>
                                                         <h1 className='mx-2 font-weight-bold'>5</h1>
-                                                        <p className='font-weight-bold'>Event Spaces</p>
-                                                        <figcaption className="figure-caption">
+                                                        <p className='font-weight-bold'>Indoor & Outdoor Event Spaces</p>
+                                                        {/* <figcaption className="figure-caption">
                                                             Indoor & Outdoor
-                                                        </figcaption>
+                                                        </figcaption> */}
                                                     </MDBCol>
                                                     <MDBCol md='4' className='mb-2'>
                                                         <h1 className='mx-2 font-weight-bold'>11,880 sq ft</h1>
@@ -148,8 +146,7 @@ class EventSpace extends React.Component {
                                     </div>
                                     {/* </MDBStreak> */}
                                 </div>
-
-                                <MDBRow>
+                                <MDBRow className='mt-4'>
                                     <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                                             <img
@@ -176,15 +173,20 @@ class EventSpace extends React.Component {
                                 </MDBRow>
                                 <hr className="my-5" />
                                 <MDBRow>
-                                    <MDBCol lg="5">
+                                    <MDBCol lg="6">
                                         <h3 className="font-weight-bold mb-3 p-0">
                                             <strong>The Courtyard</strong>
                                         </h3>
                                         <p>
                                             An outdoor intimate event space which can accommodate social gatherings such as rehearsal dinners or wedding ceremonies as well as a great corporate cocktail reception for up to 100 guests.
                                         </p>
+                                        <MDBRow>
+                                            <MDBCol md='12'>
+                                                <img src={wed1} alt='wedding event rendering' className='img-fluid pt-2' />
+                                            </MDBCol>
+                                        </MDBRow>
                                     </MDBCol>
-                                    <MDBCol lg="7">
+                                    <MDBCol lg="6">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                                             <img
                                                 className="img-fluid"
@@ -222,7 +224,7 @@ class EventSpace extends React.Component {
                                 </MDBRow>
                                 <hr className="my-5" />
                                 <MDBRow>
-                                    <MDBCol lg="5">
+                                    <MDBCol lg="6">
                                         <h3 className="font-weight-bold mb-3 p-0">
                                             <strong>Seventeen05 Event Gallery</strong>
                                         </h3>
@@ -231,22 +233,48 @@ class EventSpace extends React.Component {
                                             It can accommodate approximately up to 250 reception style and 200 is banquet seating. It is adjacent to our pre-function space, perfect for welcoming your guests prior to entering Seventeen05.
 
                                         </p>
-                                        <MDBRow>
-                                            <MDBCol md='6'>
-                                                <img src={wed1} alt='wedding event rendering' className='img-fluid pt-2' />
-                                            </MDBCol>
-                                            <MDBCol md='6'>
-                                                <img src={wed2} alt='indoor event rendering' className='img-fluid pt-2' />
-                                            </MDBCol>
-                                        </MDBRow>
                                     </MDBCol>
-                                    <MDBCol lg="7">
+                                    <MDBCol lg="6">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-                                            <img
-                                                className="img-fluid"
-                                                src={gallery}
-                                                alt=""
-                                            />
+                                            <MDBCarousel
+                                                activeItem={1}
+                                                length={2}
+                                                // slide={true}
+                                                fade={true}
+                                                showControls={true}
+                                                showIndicators={false}
+                                                className="z-depth-1"
+                                                interval={3000}
+                                                pauseOnHover={false}
+                                            >
+                                                <MDBCarouselInner>
+                                                    <MDBCarouselItem itemId="1" >
+                                                        <MDBView>
+                                                            <img
+                                                                className="d-block w-100"
+                                                                src={gallery}
+                                                                alt="First slide"
+                                                                style={{ maxHeight: '100vh' }}
+                                                                fixed
+                                                            />
+                                                            <MDBMask overlay="black-light" />
+                                                        </MDBView>
+                                                    </MDBCarouselItem>
+                                                    <MDBCarouselItem itemId="2" >
+                                                        <MDBView>
+                                                            <img
+                                                                className="d-block w-100"
+                                                                src={wed2}
+                                                                alt="2nd Slide"
+                                                                style={{ maxHeight: '100vh' }}
+                                                                fixed
+                                                            />
+                                                            <MDBMask overlay="black-light" />
+                                                        </MDBView>
+                                                    </MDBCarouselItem>
+                                                    
+                                                </MDBCarouselInner>
+                                            </MDBCarousel>
                                             <a href="#!">
                                                 <MDBMask overlay="white-slight" />
                                             </a>
