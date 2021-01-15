@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import {
     MDBMask,
     MDBRow,
@@ -11,7 +11,6 @@ import {
     MDBCardBody,
     MDBIcon
 } from 'mdbreact';
-import { Link } from "react-router-dom";
 import './1705Colors.css';
 import Nav from './Nav';
 import bkgrd from '../assets/space-photos/entrance.png';
@@ -76,10 +75,15 @@ class EventSpace extends React.Component {
                                         SEVENTEEN
                                     <span className='white-text font-weight-bold'>05</span>
                                     </h1> */}
-                                    <h1 className='largeText display-3 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
+                                    <h1 className='slideOneText display-1 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
                                         The Experience
                                     </h1>
-                                    {/* <hr className='hr-light my-4' /> */}
+                                    <hr className='hr-light my-4' />
+                                    <h4 className="h4-responsive px-3">
+                                        The experience at Seventeen05 has been designed as a dynamic interplay between spaces crafted to maximize your vision of an event.
+                                        Inspiring event settings featuring a welcoming background of contemporary, contextual design, unparalleled style for any gathering.
+                                        With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings.
+                                    </h4>
                                 </MDBCol>
                             </MDBRow>
                         </MDBContainer>
@@ -90,19 +94,22 @@ class EventSpace extends React.Component {
                                 <h2 className="display-5 text-center py-3">
                                     Vibrant Spaces
                                 </h2>
-                                <p className="text-center w-responsive mx-auto mb-3">
+                                {/* <p className="text-center w-responsive mx-auto mb-3">
                                     The experience at Seventeen05 has been designed as a dynamic interplay between spaces crafted to maximize your vision of an event.
                                     Inspiring event settings featuring a welcoming background of contemporary, contextual design, unparalleled style for any gathering.
                                     With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings.
-                                </p>
-                                <div className='p-2'>
-                                    <div className='streak streak-photo streak-long-1'>
+                                </p> */}
+                                <div className='px-2'>
+                                    <div className='streak streak-photo streak-long-2'>
                                         <div className='mask flex-center'>
                                             <MDBContainer>
                                                 <MDBRow className='black-text text-center'>
                                                     <MDBCol md='4' className='mb-2'>
                                                         <h1 className='mx-2 font-weight-bold'>5</h1>
                                                         <p className='font-weight-bold'>Event Spaces</p>
+                                                        <figcaption className="figure-caption">
+                                                            Indoor & Outdoor
+                                                        </figcaption>
                                                     </MDBCol>
                                                     <MDBCol md='4' className='mb-2'>
                                                         <h1 className='mx-2 font-weight-bold'>11,880 sq ft</h1>
@@ -130,14 +137,14 @@ class EventSpace extends React.Component {
                                     {/* </MDBStreak> */}
                                 </div>
                                 <div className='text-center pb-5'>
-                                    <MDBBtn
-                                        className='gold black-text'
-                                        size='lg'
-                                        href='#'
-                                        target='_blank'
-                                    >
-                                        Get Started
-                                    </MDBBtn>
+                                    <Link to='/contact' >
+                                        <MDBBtn
+                                            className='gold black-text'
+                                            size='lg'
+                                        >
+                                            Get Started
+                                        </MDBBtn>
+                                    </Link>
                                 </div>
                                 <MDBRow>
                                     <MDBCol lg="7">
@@ -157,7 +164,7 @@ class EventSpace extends React.Component {
                                             <strong>Patio</strong>
                                         </h3>
                                         <p>
-                                            The Patio boasts a variety of different features including an outdoor contemporary, bar, open kitchen, perfectly designed landscape lighting with exposed wood beams.  This space is ideal for an event reception.
+                                            The Patio boasts a variety of different features including an outdoor contemporary open kitchen, perfectly designed landscape lighting with exposed wood beams. This space is ideal for an event reception.
                                         </p>
                                         {/* <MDBBtn size="md" className="gold black-text waves-light ">
                                             Book Now
@@ -171,7 +178,7 @@ class EventSpace extends React.Component {
                                             <strong>The Courtyard</strong>
                                         </h3>
                                         <p>
-                                            An outdoor intimate event space which can accommodate social gatherings such as rehearsal dinners or wedding ceremonies as well as a great corporate cocktail reception.  It can accommodate gatherings up to 100 guests.
+                                            An outdoor intimate event space which can accommodate social gatherings such as rehearsal dinners or wedding ceremonies as well as a great corporate cocktail reception for up to 100 guests.
                                         </p>
                                     </MDBCol>
                                     <MDBCol lg="7">
@@ -203,10 +210,10 @@ class EventSpace extends React.Component {
                                     </MDBCol>
                                     <MDBCol lg="5">
                                         <h3 className="font-weight-bold mb-3 p-0">
-                                            <strong>Studio Experience</strong>
+                                            <strong>Kitchen Studio</strong>
                                         </h3>
                                         <p>
-                                            The Experience Studio is a state of the art demo kitchen that features views to the Patio and Courtyard.  It is a great location for cooking demonstrations or lunches or dinners of social or corporate nature for approximately 30 guests
+                                            The Kitchen Studio is a state of the art demo kitchen that features views to the Patio and Courtyard. It is a great location for cooking demonstrations, lunches, dinners of social or corporate nature for approximately 30 guests.
                                         </p>
                                     </MDBCol>
                                 </MDBRow>
@@ -214,11 +221,11 @@ class EventSpace extends React.Component {
                                 <MDBRow>
                                     <MDBCol lg="5">
                                         <h3 className="font-weight-bold mb-3 p-0">
-                                            <strong>1705 Event Gallery</strong>
+                                            <strong>Seventeen05 Event Gallery</strong>
                                         </h3>
                                         <p>
-                                            Seventeen05 is our main event gallery with 3917 sq ft. It features abundant natural light and loft like exposed ceilings conducive to an open, airy feeling, which allow for creative decorative and lighting possibilities. Glass walls unveil the perfect view to The Courtyard. Seventeen05 can be divided into 2 equal event spaces or be enjoyed as 1.<br /><br />
-                                            It can accommodate approximately up to 250 reception style and 200 is banquet seating. It is adjacent to our prefuntion perfect for welcoming your guests prior to entering Seventeen05.
+                                            Seventeen05 is our main event gallery. It features abundant natural light and loft like exposed ceilings conducive to an open, airy feeling, which allow for creative decorative and lighting possibilities. Glass walls unveil the perfect view to The Courtyard. Seventeen05 can be divided into 2 equal event spaces or be enjoyed as 1.
+                                            It can accommodate approximately up to 250 reception style and 200 is banquet seating. It is adjacent to our pre-function space, perfect for welcoming your guests prior to entering Seventeen05.
 
                                         </p>
                                     </MDBCol>
@@ -236,14 +243,14 @@ class EventSpace extends React.Component {
                                     </MDBCol>
                                 </MDBRow>
                                 <div className="pt-5 d-flex justify-content-center">
-                                    <MDBBtn
-                                        className='blackgrnd black-text goldtext'
-                                        size='lg'
-                                        href='#'
-                                        target='_blank'
-                                    >
-                                        Get Started
-                                    </MDBBtn>
+                                    <Link to='/contact'>
+                                        <MDBBtn
+                                            className='blackgrnd black-text goldtext'
+                                            size='lg'
+                                        >
+                                            Get Started
+                                        </MDBBtn>
+                                    </Link>
                                     <div>
 
                                         <CapacityChart />

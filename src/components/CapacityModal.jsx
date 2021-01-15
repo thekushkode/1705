@@ -18,7 +18,7 @@ class CapacityChart extends Component {
         return (
             <MDBContainer>
                 <MDBBtn onClick={this.toggle} className='gold black-text' size='lg'>See the Layout</MDBBtn>
-                <MDBModal isOpen={this.state.modal} toggle={this.toggle} size='fluid' >
+                <MDBModal isOpen={this.state.modal} toggle={this.toggle} size='lg' >
                     <MDBModalHeader toggle={this.toggle}>1705 Space Layout</MDBModalHeader>
                     <MDBModalBody>
                         <div className="d-flex justify-content-center">

@@ -80,6 +80,12 @@ class Home extends React.Component {
                                     <h5 className='h5-responsive pb-3 white-text'>
                                         OPENING FALL 2021
                                     </h5>
+                                    <h6 className='white-text h6-responsive'>
+                                        A new state-of the art Event Venue located in the city’s emerging Westside neighbourhood, just moments from midtown and downtown.
+                                        Where graceful hospitality meets contemporary surroundings.
+                                        Be in the best place, where people, passions and plans come alive.
+                                        Whether you are coming together for a purposeful meeting, team-building event, planning your next gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying every event.
+                                    </h6>
                                     {/* <MDBBtn
                                         className='gold2 black-text'
                                         size='lg'
@@ -92,8 +98,8 @@ class Home extends React.Component {
                             </MDBRow>
                         </MDBContainer>
                     </MDBView>
-                    <main>
-                        <div className='px-3'>
+                    {/* <main> */}
+                        {/* <div className='px-3'>
                             <h1 className='h1-responsive text-center text-uppercase py-5'>Elegant Spaces For All Events</h1>
                             <MDBRow className='pb-5'>
                                 <MDBCol md='7'>
@@ -116,7 +122,7 @@ class Home extends React.Component {
                                     </MDBBtn>
                                 </MDBCol>
                             </MDBRow>
-                        </div>
+                        </div> */}
 
                         {/* <div>
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic1 + ")" }}>
@@ -257,8 +263,8 @@ class Home extends React.Component {
                             
                         </div> */}
 
-                    </main>
-                    <footer>
+                    {/* </main> */}
+                    <footer style={{ marginTop: '-25px' }}>
                         <FooterPage />
                     </footer>
                 </div>

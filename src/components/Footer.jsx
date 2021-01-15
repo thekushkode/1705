@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBNavLink } from "mdbreact";
 import './1705Colors.css';
 import logo3 from '../assets/Logos/1705white.jpg';
 
@@ -21,13 +21,13 @@ const FooterPage = () => {
                         <h5 className="title goldtext">Quick Links</h5>
                         <ul>
                             <li className="list-unstyled">
-                                <a href="#!">Events</a>
+                                <MDBNavLink to="/events">Events</MDBNavLink>
                             </li>
                             <li className="list-unstyled">
-                                <a href="#!">Our Space</a>
+                                <MDBNavLink to="/spaces">Our Space</MDBNavLink>
                             </li>
                             <li className="list-unstyled">
-                                <a href="#!">Contact Us</a>
+                                <MDBNavLink to="contact">Get Connected</MDBNavLink>
                             </li>
                             {/* <li className="list-unstyled">
                                 <a href="#!">Link 4</a>

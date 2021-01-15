@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer, MDBRow, MDBCol, MDBBtn } from
     "mdbreact";
 import './1705Colors.css';
@@ -29,13 +30,15 @@ class EventsPage extends Component {
                     <MDBCarousel
                         activeItem={1}
                         length={3}
-                        slide={true}
+                        // slide={true}
+                        fade={true}
                         showControls={true}
                         showIndicators={false}
                         className="z-depth-1"
+                        interval={2000}
                     >
                         <MDBCarouselInner>
-                            <MDBCarouselItem itemId="1">
+                            <MDBCarouselItem itemId="1" >
                                 <MDBView>
                                     <img
                                         className="d-block w-100"
@@ -51,7 +54,7 @@ class EventsPage extends Component {
                                     <hr className='hr-light my-4' />
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
-                            <MDBCarouselItem itemId="2">
+                            <MDBCarouselItem itemId="2" >
                                 <MDBView>
                                     <img
                                         className="d-block w-100"
@@ -68,7 +71,7 @@ class EventsPage extends Component {
                                     {/* <p>First text or button</p> */}
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
-                            <MDBCarouselItem itemId="3">
+                            <MDBCarouselItem itemId="3" >
                                 <MDBView>
                                     <img
                                         className="d-block w-100"
@@ -87,7 +90,7 @@ class EventsPage extends Component {
                             </MDBCarouselItem>
                         </MDBCarouselInner>
                     </MDBCarousel>
-                    <section className="text-center my-5">
+                    {/* <section className="text-center my-5">
                         <h2 className="h1-responsive my-5">
                             Revel & Relish in Life's Milestones at Seventeen05!
                         </h2>
@@ -103,7 +106,7 @@ class EventsPage extends Component {
                             Get Started!
                         </MDBBtn>
 
-                    </section>
+                    </section> */}
                     <section>
                         <MDBRow className='mt-3 px-3'>
                             <MDBCol md='6'>
@@ -168,9 +171,9 @@ class EventsPage extends Component {
                             <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + wine + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h1 className='smallMediaText h1-responsive text-left goldtext'>As an event venue, Seventeen05 partners with professional food, beverage, design and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h1>
+                                        <h1 className='smallMediaText h1-responsive text-left text-sm-center goldtext'>As an event venue, Seventeen05 partners with professional food, beverage, design and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h1>
                                         <div className='d-flex justify-content-center' >
-                                            <MDBBtn className='black-text gold' size='sm' >Get Connected</MDBBtn>
+                                            <Link to='/contact'><MDBBtn className='black-text gold' size='sm' >Get Connected</MDBBtn></Link>
                                         </div>
                                     </MDBContainer>
                                 </div>

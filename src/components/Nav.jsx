@@ -82,16 +82,19 @@ class Nav extends React.Component {
                                         </MDBDropdownMenu>
                                     </MDBDropdown> */}
                                     <MDBNavItem>
-                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text ml-3' to='/events'>Events</MDBNavLink>
+                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text mobileNavMargin' to='/events' style={{ marginLeft: '70px' }}>Events</MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text ml-3' to='/spaces'>Our Space</MDBNavLink>
+                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text mobileNavMargin' to='/spaces' style={{ marginLeft: '70px' }}>Our Space</MDBNavLink>
                                     </MDBNavItem>
                                     {/* <MDBNavItem>
                                         <MDBNavLink className='font-weight-bolder white-text' to='#'>Payments</MDBNavLink>
                                     </MDBNavItem> */}
                                     <MDBNavItem>
-                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text ml-3' to='/contact'>Get Connected</MDBNavLink>
+                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text mobileNavMargin' to='/contact' style={{ marginLeft: '70px' }}>Get Connected</MDBNavLink>
+                                    </MDBNavItem>
+                                    <MDBNavItem>
+                                        <MDBNavLink className='text-uppercase font-weight-bolder white-text mobileNavMargin' to='#!' style={{ marginLeft: '70px' }}>Dinner is Served</MDBNavLink>
                                     </MDBNavItem>
                                 </MDBNavbarNav>
                                 <MDBNavbarNav right>
@@ -100,11 +103,11 @@ class Nav extends React.Component {
                                             <MDBIcon className='goldtext2' fab icon='facebook' />
                                         </MDBNavLink>
                                     </MDBNavItem>
-                                    <MDBNavItem>
+                                    {/* <MDBNavItem>
                                         <MDBNavLink link to='!#'>
                                             <MDBIcon className='goldtext2' fab icon='twitter' />
                                         </MDBNavLink>
-                                    </MDBNavItem>
+                                    </MDBNavItem> */}
                                     <MDBNavItem>
                                         <MDBNavLink link to='!#'>
                                             <MDBIcon className='goldtext2' fab icon='instagram' />
