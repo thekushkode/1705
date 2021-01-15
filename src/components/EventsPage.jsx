@@ -37,7 +37,7 @@ class EventsPage extends Component {
                         showIndicators={false}
                         className="z-depth-1"
                         interval={3000}
-                        pauseOnHover={false}
+                        pause={false}
                     >
                         <MDBCarouselInner>
                             <MDBCarouselItem itemId="1" >
@@ -121,29 +121,8 @@ class EventsPage extends Component {
                             </Link>
                         </div>
                         <MDBRow className='mt-3 px-3'>
-                            <MDBCol md='12'>
-                                <div>
-                                    <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + inside + ")" }}>
-                                        <div className='mask flex-center rgba-black-strong'>
-                                            <MDBContainer>
-                                                <h1 className='largeText display-3 text-center white-text my-3 text-uppercase'>Weddings</h1>
-                                            </MDBContainer>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* STREAK was streak-long-2*/}
-                            </MDBCol>
-                        </MDBRow>
-                        <MDBRow className='mt-3 px-3'>
-                            <MDBCol md='12'>
-                                <h1 className='h1-responsive text-center text-uppercase mt-3' >Fall In Love With Seventeen05</h1>
-                                <hr className='mx-5' />
-                                <p className='pt-3' >Revel and relish in life's milestones at Seventeen05. Whether you are planning a Micro celebration for two virtually watched by your friends and family or a large-scale wedding, Seventeen05 will curate your experience and elevate your vision to your liking.</p>
-                            </MDBCol>
-                        </MDBRow>
-                        {/* <MDBRow className='mt-3 px-3'>
                             <MDBCol md='6'>
-                                STREAK was streak-long-2
+                                {/* STREAK was streak-long-2 */}
                                 <div>
                                     <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + inside + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
@@ -159,7 +138,7 @@ class EventsPage extends Component {
                                 <hr className='mx-5' />
                                 <p className='pt-3' >Revel and relish in life's milestones at Seventeen05. Whether you are planning a Micro celebration for two virtually watched by your friends and family or a large-scale wedding, Seventeen05 will curate your experience and elevate your vision to your liking.</p>
                             </MDBCol>
-                        </MDBRow> */}
+                        </MDBRow>
                         <MDBRow className='mt-3 px-3'>
                             <MDBCol md='6'>
                                 {/* STREAK was streak-long-2*/}
@@ -204,7 +183,7 @@ class EventsPage extends Component {
                             <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + wine + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h1 className='smallMediaText h1-responsive text-center text-sm-center goldtext'>As an event venue, Seventeen05 partners with professional food, beverage, design and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h1>
+                                        <h2 className='smallMediaText h2-responsive text-center text-sm-center white-text'>As an event venue, Seventeen05 partners with professional food, beverage, design and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h2>
                                         <div className='d-flex justify-content-center' >
                                             <Link to='/contact'><MDBBtn className='black-text gold' size='md' >Get Started</MDBBtn></Link>
                                         </div>
