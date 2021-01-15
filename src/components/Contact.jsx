@@ -87,10 +87,10 @@ class Contact extends Component {
                             backgroundImage: "url(" + bkgrnd + ")"
                         }}
                     >
-                        <div className="rgba-black-strong pb-5 px-2 text-center">
-                            <MDBContainer>
+                        <div className="rgba-black-strong pb-5 px-2 text-center" >
+                            <MDBContainer style={{ marginTop: '100px' }}>
 
-                                <section className="my-5" >
+                                <section className="my-5">
                                     {/* <h2 className="display-3 goldtext2 experienceText text-center text-uppercase pt-5 my-5">
                                         Get Connected
                                     </h2> */}
