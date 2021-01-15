@@ -9,6 +9,7 @@ import dance from '../assets/slides/dancers.jpg';
 import inside from '../assets/space-photos/inside1.png';
 import studio from '../assets/space-photos/studio-experience.png';
 import entrance from '../assets/space-photos/entrance.png';
+import patio from '../assets/space-photos/patio.png';
 import FooterPage from "./Footer";
 import Nav from "./Nav";
 
@@ -35,7 +36,8 @@ class EventsPage extends Component {
                         showControls={true}
                         showIndicators={false}
                         className="z-depth-1"
-                        interval={2000}
+                        interval={2500}
+                        pauseOnHover={false}
                     >
                         <MDBCarouselInner>
                             <MDBCarouselItem itemId="1" >
@@ -108,6 +110,16 @@ class EventsPage extends Component {
 
                     </section> */}
                     <section>
+                        <div className="text-center py-4">
+                            <Link to='/contact'>
+                                <MDBBtn
+                                    className='gold black-text'
+                                    size='lg'
+                                >
+                                    Get Started
+                                </MDBBtn>
+                            </Link>
+                        </div>
                         <MDBRow className='mt-3 px-3'>
                             <MDBCol md='6'>
                                 {/* STREAK was streak-long-2*/}
@@ -131,7 +143,7 @@ class EventsPage extends Component {
                             <MDBCol md='6'>
                                 {/* STREAK was streak-long-2*/}
                                 <div>
-                                    <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + studio + ")" }}>
+                                    <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + patio + ")" }}>
                                         <div className='mask flex-center rgba-black-strong'>
                                             <MDBContainer>
                                                 <h1 className='largeText display-3 text-center white-text my-3 text-uppercase'>Corporate Gatherings</h1>
@@ -171,9 +183,9 @@ class EventsPage extends Component {
                             <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + wine + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h1 className='smallMediaText h1-responsive text-left text-sm-center goldtext'>As an event venue, Seventeen05 partners with professional food, beverage, design and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h1>
+                                        <h1 className='smallMediaText h1-responsive text-center text-sm-center goldtext'>As an event venue, Seventeen05 partners with professional food, beverage, design and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h1>
                                         <div className='d-flex justify-content-center' >
-                                            <Link to='/contact'><MDBBtn className='black-text gold' size='sm' >Get Connected</MDBBtn></Link>
+                                            <Link to='/contact'><MDBBtn className='black-text gold' size='md' >Get Connected</MDBBtn></Link>
                                         </div>
                                     </MDBContainer>
                                 </div>

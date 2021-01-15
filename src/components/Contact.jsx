@@ -91,7 +91,7 @@ class Contact extends Component {
                             <MDBContainer>
 
                                 <section className="my-5">
-                                    <h2 className="display-3 goldtext2 text-center pt-5 my-5">
+                                    <h2 className="display-3 goldtext2 experienceText text-center text-uppercase pt-5 my-5">
                                         Get Connected
                                     </h2>
 

@@ -77,15 +77,15 @@ class Home extends React.Component {
                                         SEVENTEEN<span className='goldtext2'>05</span>
                                     </h1>
                                     <hr className='hr-light my-4' />
-                                    <h5 className='h5-responsive pb-3 white-text'>
+                                    <h4 className='h4-responsive pb-3 white-text font-weight-bold'>
                                         OPENING FALL 2021
-                                    </h5>
-                                    <h6 className='white-text h6-responsive'>
+                                    </h4>
+                                    <h5 className='white-text h5-responsive px-5'>
                                         A new state-of the art Event Venue located in the city’s emerging Westside neighbourhood, just moments from midtown and downtown.
                                         Where graceful hospitality meets contemporary surroundings.
                                         Be in the best place, where people, passions and plans come alive.
                                         Whether you are coming together for a purposeful meeting, team-building event, planning your next gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying every event.
-                                    </h6>
+                                    </h5>
                                     {/* <MDBBtn
                                         className='gold2 black-text'
                                         size='lg'

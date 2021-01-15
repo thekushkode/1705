@@ -20,6 +20,8 @@ import courtyard from '../assets/space-photos/courtyard.png';
 import gallery from '../assets/space-photos/inside1.png';
 import FooterPage from './Footer';
 import CapacityChart from './CapacityModal';
+import wed1 from '../assets/inspiration/wed1.jpg';
+import wed2 from '../assets/inspiration/wed2.jpg';
 
 class EventSpace extends React.Component {
     // state = {
@@ -84,6 +86,16 @@ class EventSpace extends React.Component {
                                         Inspiring event settings featuring a welcoming background of contemporary, contextual design, unparalleled style for any gathering.
                                         With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings.
                                     </h4>
+                                    <div className='text-center pt-2'>
+                                        <Link to='/contact' >
+                                            <MDBBtn
+                                                className='gold black-text'
+                                                size='lg'
+                                            >
+                                                Get Started
+                                        </MDBBtn>
+                                        </Link>
+                                    </div>
                                 </MDBCol>
                             </MDBRow>
                         </MDBContainer>
@@ -91,9 +103,9 @@ class EventSpace extends React.Component {
                     <main>
                         <MDBCard className="px-5 pb-5">
                             <MDBCardBody>
-                                <h2 className="display-5 text-center py-3">
+                                {/* <h2 className="display-5 text-center py-3">
                                     Vibrant Spaces
-                                </h2>
+                                </h2> */}
                                 {/* <p className="text-center w-responsive mx-auto mb-3">
                                     The experience at Seventeen05 has been designed as a dynamic interplay between spaces crafted to maximize your vision of an event.
                                     Inspiring event settings featuring a welcoming background of contemporary, contextual design, unparalleled style for any gathering.
@@ -136,16 +148,7 @@ class EventSpace extends React.Component {
                                     </div>
                                     {/* </MDBStreak> */}
                                 </div>
-                                <div className='text-center pb-5'>
-                                    <Link to='/contact' >
-                                        <MDBBtn
-                                            className='gold black-text'
-                                            size='lg'
-                                        >
-                                            Get Started
-                                        </MDBBtn>
-                                    </Link>
-                                </div>
+
                                 <MDBRow>
                                     <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
@@ -228,6 +231,14 @@ class EventSpace extends React.Component {
                                             It can accommodate approximately up to 250 reception style and 200 is banquet seating. It is adjacent to our pre-function space, perfect for welcoming your guests prior to entering Seventeen05.
 
                                         </p>
+                                        <MDBRow>
+                                            <MDBCol md='6'>
+                                                <img src={wed1} alt='wedding event rendering' className='img-fluid pt-2' />
+                                            </MDBCol>
+                                            <MDBCol md='6'>
+                                                <img src={wed2} alt='indoor event rendering' className='img-fluid pt-2' />
+                                            </MDBCol>
+                                        </MDBRow>
                                     </MDBCol>
                                     <MDBCol lg="7">
                                         <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
