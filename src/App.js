@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import EventSpace from './components/EventSpace';
 import EventsPage from './components/EventsPage';
 import EmailThankYou from './components/EmailThankYou';
+import ChefsTable from './components/ChefsTable';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/spaces' component={EventSpace} />
       <Route exact path='/events' component={EventsPage} />
+      <Route exact path='/chefstable' component={ChefsTable} />
       <Route exact path='/email-received' component={EmailThankYou} />
     </Switch>
   );

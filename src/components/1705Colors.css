@@ -49,6 +49,14 @@ body {
     background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(172, 130, 73, .5) 100%);
 } */
 
+.mdb-main-label.active {
+    color: white !important;
+}
+
+.filtrable {
+    color: black !important;
+}
+
 
 @media (max-width: 991.98px) {
     .largeText {

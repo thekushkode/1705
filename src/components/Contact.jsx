@@ -89,12 +89,7 @@ class Contact extends Component {
                     >
                         <div className="rgba-black-strong pb-5 px-2 text-center" >
                             <MDBContainer style={{ marginTop: '100px' }}>
-
                                 <section className="my-5">
-                                    {/* <h2 className="display-3 goldtext2 experienceText text-center text-uppercase pt-5 my-5">
-                                        Get Connected
-                                    </h2> */}
-
                                     <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)' }}>
                                         <h1 className="w-responsive white-text pt-3">
                                             Event Profile
@@ -207,7 +202,7 @@ class Contact extends Component {
                                                         </div>
                                                     </MDBCol>
                                                 </MDBRow>
-                                                
+
                                                 <MDBRow>
                                                     <MDBCol md="12">
                                                         <div className="md-form mb-0">
@@ -240,13 +235,13 @@ class Contact extends Component {
                                                     <MDBIcon icon="phone" size="2x" className="goldtext mt-4" />
                                                     <p className="goldtext2">+ 01 234 567 89</p>
                                                 </li>
-                                                <li>
+                                                {/* <li>
                                                     <MDBIcon icon="envelope" size="2x" className="goldtext mt-4" />
                                                     <p className="goldtext2">contact@example.com</p>
-                                                </li>
+                                                </li> */}
                                             </ul>
                                         </MDBCol>
-                                        <p className='white-text text-justify px-2'>AT Seventeen05, WE'RE COMMITTED TO DELIVERING MEANINGFUL, MEMORABLE EXPERIENCES TO OUR GUESTS THROUGH CONNECTED SERVICE. WE CAN MAKE THIS HAPPEN AS WE FEEL SAFE AND CONFIDENT IN OUR SPACES. WE WILL OPERATE BEYOND CDC AND STATE-MANDATED HEALTH AND SAFETY GUIDELINES IN ORDER TO DO OUR PART IN KEEPING YOU AND OUR CITY SAFE.</p>
+                                        <p className='white-text text-justify px-2'>A Seventeen05, WE'RE COMMITTED TO DELIVERING MEANINGFUL, MEMORABLE EXPERIENCES TO OUR GUESTS THROUGH CONNECTED SERVICE. WE CAN MAKE THIS HAPPEN AS WE FEEL SAFE AND CONFIDENT IN OUR SPACES. WE WILL OPERATE BEYOND CDC AND STATE-MANDATED HEALTH AND SAFETY GUIDELINES IN ORDER TO DO OUR PART IN KEEPING YOU AND OUR CITY SAFE.</p>
                                     </MDBRow>
                                 </section>
                             </MDBContainer>
