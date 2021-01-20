@@ -82,7 +82,7 @@ class Home extends React.Component {
                                     </h4>
                                     <h5 className='white-text h5-responsive px-5'>
                                         A new state-of the art Event Venue located in the city’s emerging Westside neighbourhood, just moments from midtown and downtown.
-                                        Be in the best place, where graceful hospitality meets contemporary surroundings.Where people, passions and plans come alive.
+                                        Be in the best place, where graceful hospitality meets contemporary surroundings. Where people, passions and plans come alive.
                                         Whether you are coming together for a purposeful meeting, team-building event, planning your next gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying every event.
                                     </h5>
                                     {/* <MDBBtn

@@ -229,8 +229,8 @@ class EventSpace extends React.Component {
                                             <strong>Seventeen05 Event Gallery</strong>
                                         </h3>
                                         <p>
-                                            Seventeen05 is our main event gallery. It features abundant natural light and loft like exposed ceilings conducive to an open, airy feeling, which allow for creative decorative and lighting possibilities. Glass walls unveil the perfect view to The Courtyard. Seventeen05 can be divided into 2 equal event spaces or be enjoyed as 1.
-                                            It can accommodate approximately up to 250 reception style and 200 is banquet seating. It is adjacent to our pre-function space, perfect for welcoming your guests prior to entering Seventeen05.
+                                            Seventeen05 is our main event gallery. It features abundant natural light and loft like exposed ceilings, allowing for creative decorative and lighting possibilities. Glass walls unveil the perfect view to The Courtyard. Seventeen05 can be divided into 2 equal event spaces or be enjoyed as 1.
+                                            It can accommodate approximately up to 250 reception style and 200 in banquet seating. It is adjacent to our pre-function space, perfect for welcoming your guests prior to entering Seventeen05.
 
                                         </p>
                                     </MDBCol>

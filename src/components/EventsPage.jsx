@@ -174,7 +174,7 @@ class EventsPage extends Component {
                             <MDBCol md='6'>
                                 <h1 className='h1-responsive text-center text-uppercase mt-3' >Be In The Best Place</h1>
                                 <hr className='mx-5' />
-                                <p className='pt-3' >Celebrate coming of age at Seventeen05, our event gallery can accommodate parties of 200 guests, additional outdoor space available. We offer unforgettable settings for Gala’s, rehearsal dinners and more. Our dedicated team of experienced and detail–oriented professionals will work with you to perfect your event for your guests.</p>
+                                <p className='pt-3' >Celebrate coming of age at Seventeen05, our event gallery can accommodate parties of approximately 200 guests. Additional outdoor space available. We offer unforgettable settings for Gala’s, rehearsal dinners and more. Our dedicated team of experienced and detail–oriented professionals will work with you to perfect your event for your guests.</p>
                             </MDBCol>
                         </MDBRow>
                     </section>
@@ -183,7 +183,7 @@ class EventsPage extends Component {
                             <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + wine + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h2 className='smallMediaText h2-responsive text-center text-sm-center white-text'>As an event venue, Seventeen05 partners with professional food, beverage, design and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h2>
+                                        <h2 className='smallMediaText h2-responsive text-center text-sm-center white-text'>As an event venue, Seventeen05 partners with professional food, beverage, decor and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h2>
                                         <div className='d-flex justify-content-center' >
                                             <Link to='/contact'><MDBBtn className='black-text gold' size='md' >Get Started</MDBBtn></Link>
                                         </div>

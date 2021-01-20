@@ -13,6 +13,9 @@ const FooterPage = () => {
                         <p>
                             1705 Commerce Drive NW<br/>Atlanta, GA 30318
                         </p>
+                        <p>
+                            <a href='tel:1234567890'>404.555.1234</a>
+                        </p>
                     </MDBCol>
                     {/* <MDBCol md='6'>
                         <img src={logo3} alt='1705 logo' className='img-fluid d-block'/>

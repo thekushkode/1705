@@ -91,10 +91,10 @@ class Contact extends Component {
                             <MDBContainer style={{ marginTop: '100px' }}>
                                 <section className="my-5">
                                     <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)' }}>
-                                        <h1 className="w-responsive white-text pt-3">
+                                        <h1 className="w-responsive goldtext mx-auto pt-3">
                                             Event Profile
                                         </h1>
-                                        <MDBCol md="9" className="md-0 mb-5 pt-3">
+                                        <MDBCol md="12" className="md-0 mb-5 pt-3">
                                             <form onSubmit={this.submitForm}
                                                 action="https://formspree.io/f/moqpykoo"
                                                 method="POST">
@@ -225,7 +225,7 @@ class Contact extends Component {
                                                 </div>
                                             </form>
                                         </MDBCol>
-                                        <MDBCol md="3" className="text-center pt-5">
+                                        {/* <MDBCol md="3" className="text-center pt-5">
                                             <ul className="list-unstyled mb-0">
                                                 <li>
                                                     <MDBIcon icon="map-marker-alt" size="2x" className="goldtext" />
@@ -235,12 +235,12 @@ class Contact extends Component {
                                                     <MDBIcon icon="phone" size="2x" className="goldtext mt-4" />
                                                     <p className="goldtext2">+ 01 234 567 89</p>
                                                 </li>
-                                                {/* <li>
+                                                <li>
                                                     <MDBIcon icon="envelope" size="2x" className="goldtext mt-4" />
                                                     <p className="goldtext2">contact@example.com</p>
-                                                </li> */}
+                                                </li>
                                             </ul>
-                                        </MDBCol>
+                                        </MDBCol> */}
                                         <p className='white-text text-justify px-2'>A Seventeen05, WE'RE COMMITTED TO DELIVERING MEANINGFUL, MEMORABLE EXPERIENCES TO OUR GUESTS THROUGH CONNECTED SERVICE. WE CAN MAKE THIS HAPPEN AS WE FEEL SAFE AND CONFIDENT IN OUR SPACES. WE WILL OPERATE BEYOND CDC AND STATE-MANDATED HEALTH AND SAFETY GUIDELINES IN ORDER TO DO OUR PART IN KEEPING YOU AND OUR CITY SAFE.</p>
                                     </MDBRow>
                                 </section>

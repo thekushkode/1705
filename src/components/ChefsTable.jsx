@@ -124,19 +124,19 @@ class ChefsTable extends React.Component {
                                                     waves />
                                                 <MDBCardBody>
                                                     <MDBCardTitle className='text-uppercase'>Dinner Is Served</MDBCardTitle>
-                                                    <MDBCardText>Dinner is Served is a unique series of culinary dinner experiences serving up from 2 up to 8 guests.
+                                                    <MDBCardText>Dinner is Served is a unique series of culinary dinner experiences To-Go, serving from 2 up to 8 guests.
                                                     Enjoy the perfect curated meal for any holiday or special occasion throughout the year.
                                                     For your convenience, we offer contact-free curbside pick-up.
                                                     Just unpack, plate and enjoy!
                                                     </MDBCardText>
                                                     <h5>Featured Occasions:</h5>
                                                     <ul>
-                                                        <li>Valentine's Day Dinner- Serves 2 Guests</li>
-                                                        <li>Mother's Day Brunch- Serves Up To 8 Guests</li>
-                                                        <li>Father's Day- Serves 4 Guests</li>
-                                                        <li>Fourth of July- Serves Up To 8 Guests</li>
-                                                        <li>Thanksgiving- Serves Up To 8 Guests</li>
-                                                        <li>Christmas- Serves Up To 8 Guests</li>
+                                                        <li>Valentine's Day Dinner - Serves 2 Guests</li>
+                                                        <li>Mother's Day Brunch - Serves Up To 8 Guests</li>
+                                                        <li>Father's Day - Serves 4 Guests</li>
+                                                        <li>Fourth of July - Serves Up To 8 Guests</li>
+                                                        <li>Thanksgiving - Serves Up To 8 Guests</li>
+                                                        <li>Christmas - Serves Up To 8 Guests</li>
                                                     </ul>
                                                     {/* <MDBBtn href="#">Click</MDBBtn> */}
                                                 </MDBCardBody>
@@ -175,15 +175,15 @@ class ChefsTable extends React.Component {
                                                     waves />
                                                 <MDBCardBody>
                                                     <MDBCardTitle className='text-uppercase'>Chef's Table</MDBCardTitle>
-                                                    <MDBCardText>Chef’s Table is a unique series of intimate gourmet dinner experiences for 10 or more guests, expertly prepared to be catered in the comfort of your own home.</MDBCardText>
+                                                    <MDBCardText>Chef’s Table is a unique series of intimate gourmet dinner experiences for 10 or more guests, expertly catered in the comfort of your own home.</MDBCardText>
                                                     <br/>
                                                     <br/>
                                                     <h5>Each experience includes:</h5>
                                                     <ul>
                                                         <li>A 4 or 5 course personalized menu</li>
-                                                        <li>Dinner service will be included in the experience</li>
-                                                        <li>Beverage selections provided by host</li>
+                                                        <li>Dinner service</li>
                                                         <li>Menu can be custom paired to host's hand-selected wines</li>
+                                                        <li><i>Beverage selections provided by host</i></li>
                                                     </ul>
                                                     {/* <MDBBtn href="#">Click</MDBBtn> */}
                                                 </MDBCardBody>
@@ -213,8 +213,8 @@ class ChefsTable extends React.Component {
                                     <div className="rgba-black-strong text-center mx-auto" >
                                         <MDBContainer>
                                             <MDBRow style={{ backgroundColor: 'rgba(0, 0, 0, .8)' }}>
-                                                <h1 className="mx-auto white-text pt-3">
-                                                    Schedule Your Event
+                                                <h1 className="mx-auto goldtext pt-3">
+                                                    Inquiry Form
                                                         </h1>
                                                 <MDBCol md="12" className="md-0 mb-5 pt-3">
                                                     <form onSubmit={this.submitForm}
@@ -247,7 +247,7 @@ class ChefsTable extends React.Component {
                                                                         className='white-text' name='Phone' required />
                                                                 </div>
                                                             </MDBCol>
-                                                            <MDBCol md="6">
+                                                            {/* <MDBCol md="6">
                                                                 <div className="md-form mb-0">
                                                                     <MDBInput
                                                                         type="text"
@@ -257,15 +257,15 @@ class ChefsTable extends React.Component {
                                                                         name='Name of Event'
                                                                     />
                                                                 </div>
-                                                            </MDBCol>
-                                                        </MDBRow>
-                                                        <MDBRow>
-                                                            <MDBCol md="4">
+                                                            </MDBCol> */}
+                                                            <MDBCol md="6">
                                                                 <div className="md-form mb-0">
                                                                     <MDBInput type="text" id="date-of-event" label="Date of Event"
                                                                         className='white-text' name='Date of Event' />
                                                                 </div>
                                                             </MDBCol>
+                                                        </MDBRow>
+                                                        <MDBRow>
                                                             <MDBCol md="4">
                                                                 <div>
                                                                     <MDBInput name='Date Flexible' value={this.state.flexDate} hidden></MDBInput>
@@ -290,9 +290,7 @@ class ChefsTable extends React.Component {
                                                                     />
                                                                 </div>
                                                             </MDBCol>
-                                                        </MDBRow>
-                                                        <MDBRow>
-                                                            <MDBCol md="12">
+                                                            <MDBCol md="4">
                                                                 <div>
                                                                     <MDBInput name='Select Service:' value={this.state.selectService} hidden></MDBInput>
                                                                     <MDBSelect getValue={(e) => this.handleServiceSelection(e)}
@@ -307,7 +305,6 @@ class ChefsTable extends React.Component {
                                                                 </div>
                                                             </MDBCol>
                                                         </MDBRow>
-
                                                         <MDBRow>
                                                             <MDBCol md="12">
                                                                 <div className="md-form mb-0">
