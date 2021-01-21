@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBNavLink } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBNavLink, MDBIcon } from "mdbreact";
 import './1705Colors.css';
 import logo3 from '../assets/Logos/1705white.jpg';
 
@@ -11,11 +11,18 @@ const FooterPage = () => {
                     <MDBCol md='6'>
                         <h5 className="title goldtext">Seventeen05</h5>
                         <p>
-                            1705 Commerce Drive NW<br/>Atlanta, GA 30318
+                            1705 Commerce Drive NW<br />Atlanta, GA 30318
                         </p>
                         <p>
                             <a href='tel:1234567890'>404.555.1234</a>
                         </p>
+                        <a href='!#'>
+                            <MDBIcon className='goldtext2' fab icon='facebook' />
+                        </a>
+
+                        <a href='!#'>
+                            <MDBIcon className='goldtext2 ml-2' fab icon='instagram' />
+                        </a>
                     </MDBCol>
                     {/* <MDBCol md='6'>
                         <img src={logo3} alt='1705 logo' className='img-fluid d-block'/>
@@ -30,7 +37,10 @@ const FooterPage = () => {
                                 <MDBNavLink to="/spaces">Our Space</MDBNavLink>
                             </li>
                             <li className="list-unstyled">
-                                <MDBNavLink to="contact">Get Connected</MDBNavLink>
+                                <MDBNavLink to="/contact">Get Connected</MDBNavLink>
+                            </li>
+                            <li className="list-unstyled">
+                                <MDBNavLink to="/dineforacause">Dine For A Cause</MDBNavLink>
                             </li>
                             {/* <li className="list-unstyled">
                                 <a href="#!">Link 4</a>

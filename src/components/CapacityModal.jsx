@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
-import capacity from '../assets/space-photos/blueprint.png';
+import capacity from '../assets/space-photos/CHART.jpg';
 import './1705Colors.css';
 
 class CapacityChart extends Component {
@@ -18,7 +18,7 @@ class CapacityChart extends Component {
         return (
             <MDBContainer>
                 <MDBBtn onClick={this.toggle} className='gold black-text' size='lg'>See the Layout</MDBBtn>
-                <MDBModal isOpen={this.state.modal} toggle={this.toggle} size='lg' >
+                <MDBModal isOpen={this.state.modal} toggle={this.toggle} size='md' >
                     <MDBModalHeader toggle={this.toggle}>1705 Space Layout</MDBModalHeader>
                     <MDBModalBody>
                         <div className="d-flex justify-content-center">

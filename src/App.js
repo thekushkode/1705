@@ -15,7 +15,7 @@ function App() {
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/spaces' component={EventSpace} />
       <Route exact path='/events' component={EventsPage} />
-      <Route exact path='/chefstable' component={ChefsTable} />
+      <Route exact path='/dineforacause' component={ChefsTable} />
       <Route exact path='/email-received' component={EmailThankYou} />
     </Switch>
   );

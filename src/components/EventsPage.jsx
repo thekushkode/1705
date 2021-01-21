@@ -33,14 +33,14 @@ class EventsPage extends Component {
                         length={3}
                         // slide={true}
                         fade={true}
-                        showControls={true}
+                        showControls={false}
                         showIndicators={false}
                         className="z-depth-1"
                         interval={3000}
-                        pause={false}
+                        dataPause={false}
                     >
                         <MDBCarouselInner>
-                            <MDBCarouselItem itemId="1" >
+                            <MDBCarouselItem itemId="1">
                                 <MDBView>
                                     <img
                                         className="d-block w-100"

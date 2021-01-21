@@ -80,6 +80,7 @@ body {
     top: 200px;
 }
 
+
 @media (max-width: 767.98px) {
     .mediaPlacement {
         top: 120px !important;

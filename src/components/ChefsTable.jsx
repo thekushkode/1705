@@ -15,9 +15,8 @@ import './1705Colors.css';
 import Nav from './Nav';
 import studio from '../assets/space-photos/studio-experience.png';
 import FooterPage from './Footer';
-import dis from '../assets/Logos/dinnerserved.png';
-import one from '../assets/slides/wine.jpg';
-import two from '../assets/slides/wedd.jpg';
+import one from '../assets/inspiration/dinner.jpg';
+import two from '../assets/inspiration/tbl.jpg';
 
 
 class ChefsTable extends React.Component {
@@ -29,6 +28,7 @@ class ChefsTable extends React.Component {
             selectService: [],
             eventSpace: [],
             flexDate: [],
+            selectOccasion: [],
         };
     }
 
@@ -39,6 +39,12 @@ class ChefsTable extends React.Component {
     handleServiceSelection = (e) => {
         this.setState({
             selectService: e[0]
+        })
+    }
+
+    handleOccasionSelection = (e) => {
+        this.setState({
+            selectOccasion: e[0]
         })
     }
 
@@ -113,99 +119,54 @@ class ChefsTable extends React.Component {
                         </MDBContainer>
                     </MDBView>
                     <main>
-                        <MDBCard className="px-5 pb-5">
+                        <MDBCard >
                             <MDBCardBody>
                                 <MDBRow className='mt-4'>
                                     <MDBCol lg="6">
-                                        <MDBCol >
-                                            {/* <MDBCard style={{ width: "22rem" }}> */}
-                                            <MDBCard>
-                                                <MDBCardImage className="img-fluid" src={one}
-                                                    waves />
-                                                <MDBCardBody>
-                                                    <MDBCardTitle className='text-uppercase'>Dinner Is Served</MDBCardTitle>
-                                                    <MDBCardText>Dinner is Served is a unique series of culinary dinner experiences To-Go, serving from 2 up to 8 guests.
-                                                    Enjoy the perfect curated meal for any holiday or special occasion throughout the year.
-                                                    For your convenience, we offer contact-free curbside pick-up.
-                                                    Just unpack, plate and enjoy!
+
+                                        <MDBCard className='mt-2'>
+                                            {/* <MDBCard> */}
+                                            <MDBCardImage className="img-fluid" src={one}
+                                                waves />
+                                            <MDBCardBody>
+                                                <MDBCardTitle className='text-uppercase'>Dinner Is Served</MDBCardTitle>
+                                                <MDBCardText>Dinner is Served is a unique series of culinary dinner experiences To-Go, serving from 2 up to 8 guests.
+                                                Enjoy the perfect curated meal for any holiday or special occasion throughout the year.
+                                                For your convenience, we offer contact-free curbside pick-up.
+                                                Just unpack, plate and enjoy!
                                                     </MDBCardText>
-                                                    <h5>Featured Occasions:</h5>
-                                                    <ul>
-                                                        <li>Valentine's Day Dinner - Serves 2 Guests</li>
-                                                        <li>Mother's Day Brunch - Serves Up To 8 Guests</li>
-                                                        <li>Father's Day - Serves 4 Guests</li>
-                                                        <li>Fourth of July - Serves Up To 8 Guests</li>
-                                                        <li>Thanksgiving - Serves Up To 8 Guests</li>
-                                                        <li>Christmas - Serves Up To 8 Guests</li>
-                                                    </ul>
-                                                    {/* <MDBBtn href="#">Click</MDBBtn> */}
-                                                </MDBCardBody>
-                                            </MDBCard>
-                                        </MDBCol>
-                                        {/* <h2 className='h2-responsive text-uppercase text-center'>Dinner Is Served</h2>
-                                        <p className='text-center'>Dinner is Served is a unique series of culinary dinner experiences serving up from 2 up to 8 guests.
-                                        Enjoy the perfect curated meal for any holiday or special occasion throughout the year.
-                                        For your convenience, we offer contact-free curbside pick-up.
-                                        Just unpack, plate and enjoy!
-                                        </p>
-                                        <h5>Featured Occasions</h5>
-                                        <ul>
-                                            <li>Valentine's Day Dinner- Serves 2 Guests</li>
-                                            <li>Mother's Day Brunch- Serves Up To 8 Guests</li>
-                                            <li>Father's Day- Serves 4 Guests</li>
-                                            <li>Fourth of July- Serves Up To 8 Guests</li>
-                                            <li>Thanksgiving- Serves Up To 8 Guests</li>
-                                            <li>Christmas- Serves Up To 8 Guests</li>
-                                        </ul> */}
-                                        {/* <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-                                            <img
-                                                className="img-fluid"
-                                                src={patio}
-                                                alt=""
-                                            />
-                                            <a href="#!">
-                                                <MDBMask overlay="white-slight" />
-                                            </a>
-                                        </MDBView> */}
+                                                <h5>Featured Occasions:</h5>
+                                                <ul>
+                                                    <li>Valentine's Day Dinner - Serves 2 Guests</li>
+                                                    <li>Mother's Day Brunch - Serves Up To 8 Guests</li>
+                                                    <li>Father's Day - Serves 4 Guests</li>
+                                                    <li>Fourth of July - Serves Up To 8 Guests</li>
+                                                    <li>Thanksgiving - Serves Up To 8 Guests</li>
+                                                    <li>Christmas - Serves Up To 8 Guests</li>
+                                                </ul>
+                                                {/* <MDBBtn href="#">Click</MDBBtn> */}
+                                            </MDBCardBody>
+                                        </MDBCard>
                                     </MDBCol>
                                     <MDBCol lg="6">
-                                        <MDBCol >
-                                            <MDBCard>
-                                                <MDBCardImage className="img-fluid" src={two}
-                                                    waves />
-                                                <MDBCardBody>
-                                                    <MDBCardTitle className='text-uppercase'>Chef's Table</MDBCardTitle>
-                                                    <MDBCardText>Chef’s Table is a unique series of intimate gourmet dinner experiences for 10 or more guests, expertly catered in the comfort of your own home.</MDBCardText>
-                                                    <br/>
-                                                    <br/>
-                                                    <h5>Each experience includes:</h5>
-                                                    <ul>
-                                                        <li>A 4 or 5 course personalized menu</li>
-                                                        <li>Dinner service</li>
-                                                        <li>Menu can be custom paired to host's hand-selected wines</li>
-                                                        <li><i>Beverage selections provided by host</i></li>
-                                                    </ul>
-                                                    {/* <MDBBtn href="#">Click</MDBBtn> */}
-                                                </MDBCardBody>
-                                            </MDBCard>
-                                        </MDBCol>
-                                        {/* <h2 className='h2-responsive text-uppercase text-center'>Chef's Table</h2>
-                                        <p className='text-center'>
-                                            Chef’s Table is a unique series of intimate gourmet dinner experiences for 10 or more guests, expertly prepared to be catered in the comfort of your own home.<br /><br /><br />
-                                        </p>
-                                        <h5>Each experience includes:</h5>
-                                        <ul>
-                                            <li>A 4 or 5 course personalized menu</li>
-                                            <li>Dinner service will be included in the experience</li>
-                                            <li>Beverage selections provided by host</li>
-                                            <li>Menu can be custom paired to host's hand-selected wines</li>
-                                        </ul> */}
-                                        {/* <h3 className="font-weight-bold mb-3 p-0">
-                                            <strong>Patio</strong>
-                                        </h3>
-                                        <p>
-                                            The Patio boasts a variety of different features including an outdoor contemporary open kitchen, perfectly designed landscape lighting with exposed wood beams. This space is ideal for an event reception.
-                                        </p> */}
+                                        <MDBCard className='mt-2'>
+                                            <MDBCardImage className="d-block img-fluid" src={two}
+                                                waves />
+                                            <MDBCardBody>
+                                                <MDBCardTitle className='text-uppercase'>Chef's Table</MDBCardTitle>
+                                                <MDBCardText>Chef’s Table is a unique series of intimate gourmet dinner experiences for 10 or more guests, expertly catered in the comfort of your own home.</MDBCardText>
+                                                <br />
+                                                <br />
+                                                <h5>Each experience includes:</h5>
+                                                <ul>
+                                                    <li>A 4 or 5 course personalized menu</li>
+                                                    <li>Dinner service</li>
+                                                    <li>Menu can be custom paired to host's hand-selected wines</li>
+                                                    <li><i>Beverage selections provided by host</i></li>
+                                                </ul>
+                                                {/* <MDBBtn href="#">Click</MDBBtn> */}
+                                            </MDBCardBody>
+                                        </MDBCard>
                                     </MDBCol>
                                 </MDBRow>
                                 <MDBRow style={{ marginTop: '50px' }}>
@@ -305,6 +266,25 @@ class ChefsTable extends React.Component {
                                                                 </div>
                                                             </MDBCol>
                                                         </MDBRow>
+                                                        { this.state.selectService === 'Dinner Is Served' ? <MDBRow>
+                                                            <MDBCol md="12">
+                                                                <div>
+                                                                    <MDBInput name='Select Occasion:' value={this.state.selectOccasion} hidden></MDBInput>
+                                                                    <MDBSelect getValue={(e) => this.handleOccasionSelection(e)}
+                                                                        label='Select Occasion:'>
+                                                                        <MDBSelectInput id='occasion-selection' name='Select Occasion:' className='white-text' />
+                                                                        <MDBSelectOptions>
+                                                                            <MDBSelectOption value="Valentine's Day" name="Valentine's Day">Valentine's Day</MDBSelectOption>
+                                                                            <MDBSelectOption value="Mother's Day" name="Mother's Day">Mother's Day</MDBSelectOption>
+                                                                            <MDBSelectOption value="Father's Day" name="Father's Day">Father's Day</MDBSelectOption>
+                                                                            <MDBSelectOption value="Fourth of July" name="Fourth of July">Fourth of July</MDBSelectOption>
+                                                                            <MDBSelectOption value="Thanksgiving" name="Thanksgiving">Thanksgiving</MDBSelectOption>
+                                                                            <MDBSelectOption value="Christmas" name="Christmas">Christmas</MDBSelectOption>
+                                                                        </MDBSelectOptions>
+                                                                    </MDBSelect>
+                                                                </div>
+                                                            </MDBCol>
+                                                        </MDBRow> : null }
                                                         <MDBRow>
                                                             <MDBCol md="12">
                                                                 <div className="md-form mb-0">

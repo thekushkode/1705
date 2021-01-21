@@ -109,8 +109,8 @@ class EventSpace extends React.Component {
                                         </MDBBtn>
                                     </Link>
                                 </div> */}
-                                <div className=''>
-                                    <div className='streak streak-photo streak-long-1' >
+                                <div >
+                                    <div className='streak streak-photo streak-long-2' style={{ marginTop: '-40px', marginBottom: '-40px' }}>
                                         <div className='mask flex-center'>
                                             <MDBContainer>
                                                 <MDBRow className='black-text text-center'>
