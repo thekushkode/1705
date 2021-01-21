@@ -122,9 +122,9 @@ class ChefsTable extends React.Component {
                         <MDBCard >
                             <MDBCardBody>
                                 <MDBRow className='mt-4'>
-                                    <MDBCol lg="6">
+                                    <MDBCol lg="6" >
 
-                                        <MDBCard className='mt-2'>
+                                        <MDBCard className='mt-2' style={{ height: '100%'}} >
                                             {/* <MDBCard> */}
                                             <MDBCardImage className="img-fluid" src={one}
                                                 waves />
@@ -148,8 +148,8 @@ class ChefsTable extends React.Component {
                                             </MDBCardBody>
                                         </MDBCard>
                                     </MDBCol>
-                                    <MDBCol lg="6">
-                                        <MDBCard className='mt-2'>
+                                    <MDBCol lg="6" >
+                                        <MDBCard className='mt-2' style={{ height: '100%'}} >
                                             <MDBCardImage className="d-block img-fluid" src={two}
                                                 waves />
                                             <MDBCardBody>
@@ -266,7 +266,7 @@ class ChefsTable extends React.Component {
                                                                 </div>
                                                             </MDBCol>
                                                         </MDBRow>
-                                                        { this.state.selectService === 'Dinner Is Served' ? <MDBRow>
+                                                        {this.state.selectService === 'Dinner Is Served' ? <MDBRow>
                                                             <MDBCol md="12">
                                                                 <div>
                                                                     <MDBInput name='Select Occasion:' value={this.state.selectOccasion} hidden></MDBInput>
@@ -284,7 +284,7 @@ class ChefsTable extends React.Component {
                                                                     </MDBSelect>
                                                                 </div>
                                                             </MDBCol>
-                                                        </MDBRow> : null }
+                                                        </MDBRow> : null}
                                                         <MDBRow>
                                                             <MDBCol md="12">
                                                                 <div className="md-form mb-0">
