@@ -154,7 +154,7 @@ class ChefsTable extends React.Component {
                                                 waves />
                                             <MDBCardBody>
                                                 <MDBCardTitle className='text-uppercase'>Chef's Table</MDBCardTitle>
-                                                <MDBCardText>Chef’s Table is a unique series of intimate gourmet dinner experiences for 10 or more guests, expertly catered in the comfort of your own home.</MDBCardText>
+                                                <MDBCardText>Chef’s Table is a unique series of intimate gourmet dinner experiences for 8 or more guests, expertly catered in the comfort of your own home.</MDBCardText>
                                                 <br />
                                                 <br />
                                                 <h5>Each experience includes:</h5>
