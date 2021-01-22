@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
-import capacity from '../assets/space-photos/chart.jpg';
+import capacity from '../assets/space-photos/gldchart.jpg';
 import './1705Colors.css';
 
 class CapacityChart extends Component {
