@@ -196,6 +196,7 @@ class Contact extends Component {
                                                                     <MDBSelectOption value="Patio" name="Patio">Patio</MDBSelectOption>
                                                                     <MDBSelectOption value="Courtyard" name="Courtyard">Courtyard</MDBSelectOption>
                                                                     <MDBSelectOption value="Studio Experience" name="Studio Experience">Studio Experience</MDBSelectOption>
+                                                                    <MDBSelectOption value="1705 Event Gallery" name="1705 Event Gallery">1705 Event Gallery</MDBSelectOption>
                                                                     <MDBSelectOption value="1705 Venue Buyout" name="1705 Venue Buyout">1705 Venue Buyout</MDBSelectOption>
                                                                 </MDBSelectOptions>
                                                             </MDBSelect>
