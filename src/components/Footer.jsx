@@ -9,12 +9,12 @@ const FooterPage = () => {
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow >
                     <MDBCol md='6'>
-                        <h5 className="title goldtext">Seventeen05</h5>
+                        <h5 className="title goldtext">SEVENTEEN05</h5>
                         <p>
                             1705 Commerce Drive NW<br />Atlanta, GA 30318
                         </p>
                         <p>
-                            <a href='tel:1234567890'>404.555.1234</a>
+                            <a href='tel:4043513889'>404.351.3889</a>
                         </p>
                         <a href='!#'>
                             <MDBIcon className='goldtext2' fab icon='facebook' />

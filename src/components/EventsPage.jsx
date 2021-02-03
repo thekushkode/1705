@@ -68,7 +68,7 @@ class EventsPage extends Component {
                                     <MDBMask overlay="black-light" />
                                 </MDBView>
                                 <MDBCarouselCaption className='topPlacement mediaPlacement'>
-                                    <h1 className="display-1 text-uppercase slideTwoText">Warm</h1>
+                                    <h1 className="display-1 text-uppercase slideTwoText">Inviting</h1>
                                     <hr className='hr-light my-4' />
                                     {/* <p>First text or button</p> */}
                                 </MDBCarouselCaption>
@@ -134,9 +134,9 @@ class EventsPage extends Component {
                                 </div>
                             </MDBCol>
                             <MDBCol md='6'>
-                                <h1 className='h1-responsive text-center text-uppercase mt-3' >Fall In Love With Seventeen05</h1>
+                                <h1 className='h1-responsive text-center text-uppercase mt-3' >Fall In Love With SEVENTEEN05</h1>
                                 <hr className='mx-5' />
-                                <p className='pt-3' >Revel and relish in life's milestones at Seventeen05. Whether you are planning a Micro celebration for two virtually watched by your friends and family or a large-scale wedding, Seventeen05 will curate your experience and elevate your vision to your liking.</p>
+                                <p className='pt-3' >Sophistication. Style. Glamor. The wedding you’ve always imagined. Write you own love story with SEVENTEEN05. Whether you prefer a grand soiree or an intimate gathering, find romance in every moment and turn moments into lifetime memories.</p>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow className='mt-3 px-3'>
@@ -155,7 +155,7 @@ class EventsPage extends Component {
                             <MDBCol md='6'>
                                 <h1 className='h1-responsive text-center text-uppercase mt-3' >Meetings That Matter</h1>
                                 <hr className='mx-5' />
-                                <p className='pt-3' >Achieve your meeting goals and strive for corporate success by planning your next event at Seventeen05. Share your concept event with us and we will bring your gathering to life with upscale service, bespoke floor plans and AV needs. Featuring fully-adaptable, cutting-edge telecommunications and multimedia technology as well as high-speed Wi-Fi Internet to maximize productivity and encourage collaboration.</p>
+                                <p className='pt-3' >Find success in any venture with SEVENTEEN05. Our expertly tailored services, complemented by cutting-edge technology, ensure every meeting or function inspires synergy and welcomes success.</p>
                             </MDBCol>
                         </MDBRow>
                         <MDBRow className='mt-3 px-3'>
@@ -172,9 +172,9 @@ class EventsPage extends Component {
                                 </div>
                             </MDBCol>
                             <MDBCol md='6'>
-                                <h1 className='h1-responsive text-center text-uppercase mt-3' >Be In The Best Place</h1>
+                                <h1 className='h1-responsive text-center text-uppercase mt-3' >The Perfect Place</h1>
                                 <hr className='mx-5' />
-                                <p className='pt-3' >Celebrate coming of age at Seventeen05, our event gallery can accommodate parties of approximately 200 guests. Additional outdoor space available. We offer unforgettable settings for Gala’s, rehearsal dinners and more. Our dedicated team of experienced and detail–oriented professionals will work with you to perfect your event for your guests.</p>
+                                <p className='pt-3' >Commemorate new beginnings, rejoice in life’s milestones, get your groove on with SEVENTEEN05. From intimate dinners to grand-galas and anything in between, we have the ideal setting and just the right space for any special occasion.</p>
                             </MDBCol>
                         </MDBRow>
                     </section>
@@ -183,7 +183,7 @@ class EventsPage extends Component {
                             <div className='streak streak-photo streak-long-1' style={{ backgroundImage: "url(" + wine + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
-                                        <h2 className='smallMediaText h2-responsive text-center text-sm-center white-text'>As an event venue, Seventeen05 partners with professional food, beverage, decor and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h2>
+                                        <h2 className='smallMediaText h2-responsive text-center text-sm-center white-text'>As an event venue, SEVENTEEN05 partners with professional food, beverage, decor and audio visual vendors to design your event experience.  Get connected to learn about our space rental rates.</h2>
                                         <div className='d-flex justify-content-center' >
                                             <Link to='/contact'><MDBBtn className='black-text gold' size='md' >Get Started</MDBBtn></Link>
                                         </div>

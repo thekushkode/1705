@@ -78,13 +78,11 @@ class EventSpace extends React.Component {
                                     <span className='white-text font-weight-bold'>05</span>
                                     </h1> */}
                                     <h1 className='slideOneText display-1 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
-                                        The Experience
+                                        Experience SEVENTEEN05
                                     </h1>
                                     <hr className='hr-light my-4' />
                                     <h4 className="h4-responsive px-3">
-                                        The experience at Seventeen05 has been designed as a dynamic interplay between spaces crafted to maximize your vision of an event.
-                                        Inspiring event settings featuring a welcoming background of contemporary, contextual design, unparalleled style for any gathering.
-                                        With more than 11,000 square feet of combined indoor and outdoor space, our venue provides idyllic backdrops for functions ranging from 240-guest events to small boardroom meetings.
+                                        A dynamic interplay between vibrant spaces, that seamlessly flow from indoors to out. More than 11,000 square feet of endless possibilities. Where synergy breeds success, and moments become lifetime memories. Experience SEVENTEEN05.
                                     </h4>
 
                                 </MDBCol>
@@ -164,7 +162,7 @@ class EventSpace extends React.Component {
                                             <strong>Patio</strong>
                                         </h3>
                                         <p>
-                                            The Patio boasts a variety of different features including an outdoor contemporary open kitchen, perfectly designed landscape lighting with exposed wood beams. This space is ideal for an event reception.
+                                            Where innovation and nature blend, exposed wood beams and living walls embrace, and the open kitchen breathes delightful notes, the Patio is the perfect setting for any event.
                                         </p>
                                         {/* <MDBBtn size="md" className="gold black-text waves-light ">
                                             Book Now
@@ -178,7 +176,7 @@ class EventSpace extends React.Component {
                                             <strong>The Courtyard</strong>
                                         </h3>
                                         <p>
-                                            An outdoor intimate event space which can accommodate social gatherings such as rehearsal dinners or wedding ceremonies as well as a great corporate cocktail reception for up to 100 guests.
+                                            The perfect ambiance for any gathering, celebrate alfresco in the intimate Courtyard.
                                         </p>
                                         <MDBRow>
                                             <MDBCol md='12'>
@@ -218,7 +216,7 @@ class EventSpace extends React.Component {
                                             <strong>Kitchen Studio</strong>
                                         </h3>
                                         <p>
-                                            The Kitchen Studio is a state of the art demo kitchen that features views to the Patio and Courtyard. It is a great location for cooking demonstrations, lunches, dinners of social or corporate nature for approximately 30 guests.
+                                            A state-of-the-art demo kitchen offering views to the Patio and Courtyard, the Kitchen Studio is the perfect space for any corporate or social gathering.
                                         </p>
                                     </MDBCol>
                                 </MDBRow>
@@ -226,11 +224,10 @@ class EventSpace extends React.Component {
                                 <MDBRow>
                                     <MDBCol lg="6">
                                         <h3 className="font-weight-bold mb-3 p-0">
-                                            <strong>Seventeen05 Event Gallery</strong>
+                                            <strong>SEVENTEEN05 Event Gallery</strong>
                                         </h3>
                                         <p>
-                                            Seventeen05 is our main event gallery. It features abundant natural light and loft like exposed ceilings, allowing for creative decorative and lighting possibilities. Glass walls unveil the perfect view to The Courtyard. Seventeen05 can be divided into 2 equal event spaces or be enjoyed as 1.
-                                            It can accommodate approximately up to 250 reception style and 200 in banquet seating. It is adjacent to our pre-function space, perfect for welcoming your guests prior to entering Seventeen05.
+                                            Enveloped with natural light and framed with glass walls and soaring beams, SEVENTEEN05 offers limitless design possibilities for any type of event.
 
                                         </p>
                                     </MDBCol>
@@ -245,7 +242,7 @@ class EventSpace extends React.Component {
                                                 showIndicators={false}
                                                 className="z-depth-1"
                                                 interval={3000}
-                                                pauseOnHover={false}
+                                                dataPause={false}
                                             >
                                                 <MDBCarouselInner>
                                                     <MDBCarouselItem itemId="1" >
@@ -272,7 +269,7 @@ class EventSpace extends React.Component {
                                                             <MDBMask overlay="black-light" />
                                                         </MDBView>
                                                     </MDBCarouselItem>
-                                                    
+
                                                 </MDBCarouselInner>
                                             </MDBCarousel>
                                             <a href="#!">

@@ -104,14 +104,11 @@ class ChefsTable extends React.Component {
                                     <span className='white-text font-weight-bold'>05</span>
                                     </h1> */}
                                     <h1 className='slideOneText display-1 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
-                                        Dine For A Cause
+                                        Dine With A Purpose
                                     </h1>
                                     <hr className='hr-light my-4' />
                                     <h4 className="h4-responsive px-3">
-                                        Seventeen05 is proud to partner with Meals On Wheels Atlanta as its mission is to support great causes in the community.
-                                        Dinner is Served and Chef’s Table are our partnership initiatives.
-                                        Both are deliciously prepared by our Executive Chef Robert Gerstenecker, former Four Seasons Atlanta Hotel Executive Chef.
-                                        All proceeds benefit Meals On Wheels home-delivered meal services program for Atlanta’s homebound senior neighbors.
+                                        SEVENTEEN05 is proud to partner with Meals On Wheels Atlanta and its mission to end senior hunger in our community. Every dining experience is expertly curated and prepared by Executive Chef Robert Gerstenecker, former Executive Chef at Four Seasons Atlanta.
                                     </h4>
 
                                 </MDBCol>
@@ -124,7 +121,7 @@ class ChefsTable extends React.Component {
                                 <MDBRow className='mt-4'>
                                     <MDBCol lg="6" >
 
-                                        <MDBCard className='mt-2' style={{ height: '100%'}} >
+                                        <MDBCard className='mt-2' style={{ height: '100%' }} >
                                             {/* <MDBCard> */}
                                             <MDBCardImage className="img-fluid" src={one}
                                                 waves />
@@ -149,7 +146,7 @@ class ChefsTable extends React.Component {
                                         </MDBCard>
                                     </MDBCol>
                                     <MDBCol lg="6" >
-                                        <MDBCard className='mt-2' style={{ height: '100%'}} >
+                                        <MDBCard className='mt-2' style={{ height: '100%' }} >
                                             <MDBCardImage className="d-block img-fluid" src={two}
                                                 waves />
                                             <MDBCardBody>
@@ -307,7 +304,7 @@ class ChefsTable extends React.Component {
                                                         </div>
                                                     </form>
                                                 </MDBCol>
-                                                <p className='white-text text-justify px-3'>At Seventeen05, WE'RE COMMITTED TO DELIVERING MEANINGFUL, MEMORABLE EXPERIENCES TO OUR GUESTS THROUGH CONNECTED SERVICE. WE CAN MAKE THIS HAPPEN AS WE FEEL SAFE AND CONFIDENT IN OUR SPACES. WE WILL OPERATE BEYOND CDC AND STATE-MANDATED HEALTH AND SAFETY GUIDELINES IN ORDER TO DO OUR PART IN KEEPING YOU AND OUR CITY SAFE.</p>
+                                                <p className='white-text text-uppercase text-justify px-3'>At SEVENTEEN05, we’re committed to cultivating meaningful and memorable experiences while operating in accordance with CDC and state guidelines.</p>
                                             </MDBRow>
                                         </MDBContainer>
 

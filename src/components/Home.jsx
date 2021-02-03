@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import './1705Colors.css';
 // import './home.css';
 import Nav from './Nav';
-import bkgrd from '../assets/inspiration/vibes1.jpg';
+import bkgrd from '../assets/inspiration/home.jpg';
 import streakpic1 from '../assets/inspiration/wedding1.jpg';
 import streakpic2 from '../assets/inspiration/champagne.jpg';
 import streakpic3 from '../assets/inspiration/plating.jpg';
@@ -62,10 +62,10 @@ class Home extends React.Component {
                         src={bkgrd}
                         fixed
                     >
-                        <MDBMask className='whitegradient' style={{ backgroundColor: 'rgb(172, 130, 73)' }} />
+                        <MDBMask overlay='black-strong' />
                         <MDBContainer
                             className='d-flex justify-content-center align-items-center'
-                            style={{ backgroundColor: 'rgb(172, 130, 73)', height: '100%', width: '100%', paddingTop: '5rem' }}
+                            style={{ height: '100%', width: '100%', paddingTop: '5rem' }}
                         >
                             <MDBRow>
                                 <MDBCol md='12' className='mb-4 white-text text-center'>
@@ -78,12 +78,10 @@ class Home extends React.Component {
                                     </h1>
                                     <hr className='hr-light my-4' />
                                     <h4 className='h4-responsive pb-3 mb-3 white-text'>
-                                        OPENING FALL 2021
+                                        OPENING LATE 2021
                                     </h4>
                                     <h5 className='white-text h5-responsive px-5'>
-                                        A new state-of the art Event Venue located in the city’s emerging Westside neighborhood, just moments from midtown and downtown.
-                                        Be in the best place, where graceful hospitality meets contemporary surroundings. Where people, passions and plans come alive.
-                                        Whether you are coming together for a purposeful meeting, team-building event, planning your next gala or wedding, our spaces are perfectly designed with flow and tailored for connecting and enjoying every event.
+                                        A brand-new state-of the-art venue nestled in the city’s vibrant Westside neighborhood, just minutes from midtown and downtown.  Where meetings and events inspire and pleasure and productivity blend. Where every moment becomes a treasured memory.  Welcome to SEVENTEEN05.
                                     </h5>
                                     {/* <MDBBtn
                                         className='gold2 black-text'
@@ -98,7 +96,7 @@ class Home extends React.Component {
                         </MDBContainer>
                     </MDBView>
                     {/* <main> */}
-                        {/* <div className='px-3'>
+                    {/* <div className='px-3'>
                             <h1 className='h1-responsive text-center text-uppercase py-5'>Elegant Spaces For All Events</h1>
                             <MDBRow className='pb-5'>
                                 <MDBCol md='7'>
@@ -123,7 +121,7 @@ class Home extends React.Component {
                             </MDBRow>
                         </div> */}
 
-                        {/* <div>
+                    {/* <div>
                             <div className='streak streak-photo streak-long-2' style={{ backgroundImage: "url(" + streakpic1 + ")" }}>
                                 <div className='mask flex-center rgba-black-strong'>
                                     <MDBContainer>
