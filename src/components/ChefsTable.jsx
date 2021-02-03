@@ -104,7 +104,7 @@ class ChefsTable extends React.Component {
                                     <span className='white-text font-weight-bold'>05</span>
                                     </h1> */}
                                     <h1 className='slideOneText display-1 text-uppercase mb-0 pt-md-5 pt-5 white-text'>
-                                        Dine With A Purpose
+                                        Dine For A Cause
                                     </h1>
                                     <hr className='hr-light my-4' />
                                     <h4 className="h4-responsive px-3">

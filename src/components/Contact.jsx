@@ -242,7 +242,7 @@ class Contact extends Component {
                                                 </li>
                                             </ul>
                                         </MDBCol> */}
-                                        <p className='white-text text-justify px-2'>A SEVENTEEN05, WE'RE COMMITTED TO DELIVERING MEANINGFUL, MEMORABLE EXPERIENCES TO OUR GUESTS THROUGH CONNECTED SERVICE. WE CAN MAKE THIS HAPPEN AS WE FEEL SAFE AND CONFIDENT IN OUR SPACES. WE WILL OPERATE BEYOND CDC AND STATE-MANDATED HEALTH AND SAFETY GUIDELINES IN ORDER TO DO OUR PART IN KEEPING YOU AND OUR CITY SAFE.</p>
+                                        <p className='white-text text-justify px-2'>At SEVENTEEN05, we’re committed to cultivating meaningful and memorable experiences while operating in accordance with CDC and state guidelines.</p>
                                     </MDBRow>
                                 </section>
                             </MDBContainer>
